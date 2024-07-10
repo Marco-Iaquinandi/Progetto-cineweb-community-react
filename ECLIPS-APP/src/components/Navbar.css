@@ -1,0 +1,54 @@
+.container-navbar {
+  max-width: 75rem;
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 5rem;
+  font-size: 16px;
+  font-weight: 600;
+}
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.navbar-links a {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
+  border: solid transparent;
+  border-width: 0 0 1px;
+}
+
+.navbar-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--color-primary);
+  transition: width 0.3s;
+  margin-top: 5px;
+}
+
+.logo-img {
+  display: flex;
+  width: 12rem;
+  border-radius: 10%;
+  padding: 1rem;
+}
+.button-LogIN {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
