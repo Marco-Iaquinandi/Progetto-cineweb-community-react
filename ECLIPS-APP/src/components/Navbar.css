@@ -22,11 +22,21 @@
   font-weight: 600;
   color: var(--color-text);
   text-decoration: none;
-  border: solid transparent;
   border-width: 0 0 1px;
 }
+.navbar-links .linkNav a {
+  display: block;
+  padding: 15px 20px;
+  font-size: 20px;
+  transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
 
-.navbar-links a::after {
+.navbar-links .linkNav a:hover {
+  color: var(--color-primary); 
+  transform: scale(1.1); 
+}
+
+.navbar-links .linkNav a::after {
   content: "";
   display: block;
   width: 0;
@@ -35,20 +45,13 @@
   transition: width 0.3s;
   margin-top: 5px;
 }
+.navbar-links .linkNav a:hover::after {
+  width: 100%;
+}
 
 .logo-img {
   display: flex;
   width: 12rem;
   border-radius: 10%;
   padding: 1rem;
-}
-.button-LogIN {
-    background-color: var(--color-primary);
-    color: var(--color-text);
-    border: none;
-    border-radius: 10px;
-    padding: 1rem 2rem;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
 }

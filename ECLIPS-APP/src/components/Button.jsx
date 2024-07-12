@@ -1,11 +1,9 @@
 import React from 'react';
 import './Button.css';
 
-const Button = ({children}) => {
+const Button = ({text, cssClass}) => {
     return (
-        <div className="acquista-abbonamento">
-            <button className="acquistaAbb">{children}</button>
-        </div>
+          <button className={cssClass}>{text}</button>
     );
 };
 

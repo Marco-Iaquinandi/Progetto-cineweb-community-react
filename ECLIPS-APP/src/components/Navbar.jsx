@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import './Navbar.css'; 
+import React, {  useState } from 'react';
+import './NavBar.css'; 
 import Button from './Button';
-
 
 
 function Navbar({ links }) {
@@ -12,12 +11,12 @@ function Navbar({ links }) {
       <img className='logo-img' src='src/assets/img/Logo.png'></img>
       <ul className="navbar-links">
         {links.map((link, index) => (
-          <li key={index}>
+          <li className='linkNav' key={index}>
             <a href={link.url}>{link.text}</a>
           </li>
         ))}
       </ul>
-        <Button className="button-LogIN">LOG IN</Button>
+        <Button text="LOG IN" cssClass={"Button-LogIN show-list"}/>
     </nav>
     </>
    

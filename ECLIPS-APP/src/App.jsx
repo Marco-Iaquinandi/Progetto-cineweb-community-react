@@ -1,18 +1,12 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import HomePage from "./components/pages/HomePage";
 import "./index.css";
 
 
 function App () {
     return (
         <>
-        <Navbar links={[
-            { url: "/", text: "Home" },
-            { url: "/", text: "Coming Soon" },
-            { url: "/", text: "Promo" },
-            { url: "/", text: "Dove Trovarci"},
-        ]} />
-        
+        <HomePage />
         </>
     )
 };
