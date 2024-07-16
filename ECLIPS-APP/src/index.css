@@ -5,6 +5,7 @@
   border: none;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
 }
 :root {
   --color-text: white;
