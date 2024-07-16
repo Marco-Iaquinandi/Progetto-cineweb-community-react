@@ -1,0 +1,69 @@
+{
+  "films": [
+    {
+      "idFilm": 0,
+      "titolo": "CHALLENGERS",
+      "genere": "Drammatico",
+      "descrizione": "Challengers racconta la storia di Tashi Ducan, una giovane e talentuosa tennista destinata a una brillante carriera internazionale. Il suo talento non passa inosservato, specialmente ai colleghi tennisti Art e Patrick. I due ragazzi, molto amici tra loro, sono totalmente incantati da Toshi.",
+      "autore": "Marco",
+      "copertina": "challengers.jpg",
+      "orari": ["21:30", "22:30", "23:00"]
+    },
+    {
+      "idFilm": 1,
+      "titolo": "BACK TO BLACK",
+      "descrizione": "lorem ipsum dolor sit amet",
+      "autore": "Marco",
+      "copertina": "btb1.jpg",
+      "orari": ["21:30", "22:30", "23:00"]
+    },
+    {
+      "idFilm": 2,
+      "titolo": "CIVIL WAR",
+      "descrizione": "Civili war e un film di guerra",
+      "autore": "Marco",
+      "copertina": "civil-war.jpg",
+      "orari": ["21:30", "22:30"]
+    },
+    {
+      "idFilm": 3,
+      "titolo": "GHOSTBUSTER-MINACCIAGLACIALE",
+      "descrizione": "lorem ipsum dolor sit amet",
+      "autore": "Marco",
+      "copertina": "ghostbusters-minaccia-glacial.jpg",
+      "orari": ["20:30", "21:30", "22:30", "23:00"]
+    },
+    {
+      "idFilm": 4,
+      "titolo": "GODZILLA E KONG - IL NUOVO IMPERO",
+      "autore": "Marco",
+      "copertina": "godzilla-e-kong-il-nuovo-imper.jpg",
+      "orari": ["21:30", "22:30", "23:00"]
+    },
+
+    {
+      "idFilm": 5,
+      "titolo": "KUNG FU PANDA 4",
+      "descrizione": "lorem ipsum dolor sit amet",
+      "autore": "Marco",
+      "copertina": "kung-fu-panda-4.jpg",
+      "orari": ["21:30", "22:30", "23:00"]
+    },
+    {
+      "idFilm": 6,
+      "titolo": "SPY FAMILY",
+      "descrizione": "lorem ipsum dolor sit amet",
+      "autore": "Marco",
+      "copertina": "spy-x-family-code-white.jpg",
+      "orari": ["21:30", "22:30", "23:00"]
+    },
+    {
+      "idFilm": 7,
+      "titolo": "UN MONDO A PARTE",
+      "descrizione": "lorem ipsum dolor sit amet",
+      "autore": "Marco",
+      "copertina": "un-mondo-a-parte.jpg",
+      "orari": ["21:30", "22:30", "23:00"]
+    }
+  ]
+}
