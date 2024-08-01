@@ -9,14 +9,6 @@ function HomePage() {
     const films = filmsData.films;
   return (
     <>
-      <Navbar
-        links={[
-          { url: "/", text: "Home" },
-          { url: "#", text: "Coming Soon" },
-          { url: "promo", text: "Promo" },
-          { url: "#", text: "Dove Trovarci" },
-        ]}
-      ></Navbar>
       <div className="Locandine-container">
       {films.map((film) => (
         <Locandine 
