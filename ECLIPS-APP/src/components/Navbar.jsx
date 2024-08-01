@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 function Navbar({ links }) {
   const [showList, setShowList] = useState(false);
@@ -13,7 +14,7 @@ function Navbar({ links }) {
         <ul className="navbar-links">
           {links.map((link, index) => (
             <li className="linkNav" key={index}>
-              <a href={link.url}>{link.text}</a>
+              <Link to={link.url}>{link.text}</Link>
             </li>
           ))}
         </ul>
