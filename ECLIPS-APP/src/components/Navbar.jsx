@@ -2,10 +2,22 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import Button from "./Button";
 import { Link } from "react-router-dom";
+import FormLogIn  from "./FormLogIn";
+import FormRegister from "./FormRegister";
+
+
 
 function Navbar({ links }) {
   const [showList, setShowList] = useState(false);
+  const [isToggled, setIsToggled] = useState(false);
+  const [showRegister, setShowRegister] = useState(false);
 
+  const handleClick = () => {
+    setIsToggled(!isToggled);
+  };
+  const handleShowRegister = () => {
+    setShowRegister(!showRegister);
+  };
 
   return (
     <>
@@ -24,10 +36,10 @@ function Navbar({ links }) {
             {showList && (
               <ul className="LogIN-Menu">
                 <li>
-                  <a href="#">Log In</a>
+                  <a href="#" data-istoggled={isToggled} onClick={handleClick}>Log In</a>
                 </li>
                 <li>
-                  <a href="#">Registrati</a>
+                  <a href="#" isShow={showRegister} onClick={handleShowRegister}>Registrati</a>
                 </li>
               </ul>
             )}
@@ -35,6 +47,10 @@ function Navbar({ links }) {
           
         </div>
       </nav>
+      <FormLogIn isToggled={isToggled} onToggle={handleClick}/>
+      <FormRegister showRegister={showRegister} onToggle={handleShowRegister} />
+      
+      
     </>
   );
 }

@@ -3,6 +3,8 @@ import Navbar from "../Navbar";
 import "../../index.css";
 import Locandine from "../Locandine";
 import filmsData from "../Listafilms.json";
+import AsideBar from "../AsideBar";
+/* import "./HomePage.css"; */
 function HomePage() {
     const films = filmsData.films;
   return (
@@ -23,7 +25,8 @@ function HomePage() {
           copertina={`../../src/assets/img/${film.copertina}`}
         ></Locandine>
       ))}
-      </div>
+      </div> 
+      <AsideBar />      
     </>
   );
 }
