@@ -11,9 +11,9 @@ function HomePage() {
     <>
       <Navbar
         links={[
-          { url: "#", text: "Home" },
+          { url: "/", text: "Home" },
           { url: "#", text: "Coming Soon" },
-          { url: "#", text: "Promo" },
+          { url: "promo", text: "Promo" },
           { url: "#", text: "Dove Trovarci" },
         ]}
       ></Navbar>

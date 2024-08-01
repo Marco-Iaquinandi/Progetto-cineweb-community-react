@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 import FormLogIn  from "./FormLogIn";
 import FormRegister from "./FormRegister";
+
 
 
 function Navbar({ links }) {
@@ -24,7 +26,7 @@ function Navbar({ links }) {
         <ul className="navbar-links">
           {links.map((link, index) => (
             <li className="linkNav" key={index}>
-              <a href={link.url}>{link.text}</a>
+              <Link to={link.url}>{link.text}</Link>
             </li>
           ))}
         </ul>
