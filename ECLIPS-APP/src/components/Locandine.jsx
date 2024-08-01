@@ -7,10 +7,10 @@ function Locandine({ title, copertina }) {
     <div className="film-item">
       <div className="image-container">
         <img src={copertina} alt=""></img>
-      </div>
-      <div className="buttons-buy-container">
-        <Button text="ACQUISTA ORA" cssClass={"btn-buy"} />
-        <Button text="Vedi Trailer" cssClass={"btn-trailer"} />
+        <div className="buttons-buy-container">
+          <Button text="ACQUISTA ORA" cssClass={"btn-buy"} />
+          <Button text="Vedi Trailer" cssClass={"btn-trailer"} />
+        </div>
       </div>
       <a className="title-film"> {title}</a>
     </div>
