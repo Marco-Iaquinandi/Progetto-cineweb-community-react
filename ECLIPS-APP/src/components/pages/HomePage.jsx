@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../Navbar";
 import "../../index.css";
 import Locandine from "../Locandine";
 import filmsData from "../Listafilms.json";
@@ -8,6 +7,7 @@ import ImageCarousel from "../ImageCarousel";
 import ImageSlider from "../ImageSlider";
 /* import "./HomePage.css"; */
 function HomePage() {
+  const films = filmsData.films;
   const films = filmsData.films;
   return (
     <>

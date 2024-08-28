@@ -1,5 +1,5 @@
 .container-navbar {
-  max-width: 75rem;
+  max-width: 100rem;
   margin: auto;
   padding: 2rem 1rem;
   display: flex;
@@ -9,6 +9,86 @@
   font-size: 16px;
   font-weight: 600;
 }
+.card {
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.p-menubar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  background: none;
+}
+.p-menubar-root-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.p-menuitem-text,
+.p-menuitem-link {
+  color: white;
+}
+
+.p-menubar
+  .p-menubar-root-list
+  > .p-menuitem:not(.p-highlight):not(.p-disabled)
+  > .p-menuitem-content:hover {
+  color: red;
+  background: none;
+}
+.p-menubar
+  .p-menubar-root-list
+  > .p-menuitem:not(.p-highlight):not(.p-disabled)
+  > .p-menuitem-content:hover {
+  color: #495057;
+  background: none;
+}
+.p-menubar
+  .p-menuitem:not(.p-highlight):not(.p-disabled).p-focus
+  > .p-menuitem-content {
+  color: #495057;
+  background: none;
+}
+.p-menubar
+  .p-menuitem:not(.p-highlight):not(.p-disabled).p-focus
+  > .p-menuitem-content {
+  color: red;
+  background: none;
+}
+.p-menubar
+  .p-menuitem:not(.p-highlight):not(.p-disabled).p-focus
+  > .p-menuitem-content {
+  color: #4b5563;
+  background: none;
+}
+
+.p-menubar .p-submenu-list {
+  padding: 0.25rem 0;
+  background: black;
+  border: 0 none;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  width: 12.5rem;
+}
+
+
+.p-menubar .p-menuitem.p-highlight > .p-menuitem-content {
+  color: #0e7490;
+  background: none;
+}
+.p-menubar .p-menuitem.p-highlight > .p-menuitem-content {
+  color: #495057;
+  background: none;
+}
+.p-menubar .p-menuitem.p-highlight.p-focus > .p-menuitem-content {
+  background: none rgba(6, 182, 212, 0.24);
+}
+.p-menubar .p-menuitem.p-highlight.p-focus > .p-menuitem-content {
+  background: none;
+}
+
 .navbar-links {
   display: flex;
   flex-direction: row;
@@ -32,8 +112,8 @@
 }
 
 .navbar-links .linkNav a:hover {
-  color: var(--color-primary); 
-  transform: scale(1.1); 
+  color: var(--color-primary);
+  transform: scale(1.1);
 }
 
 .navbar-links .linkNav a::after {
