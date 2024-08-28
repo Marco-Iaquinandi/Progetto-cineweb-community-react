@@ -1,0 +1,44 @@
+.carousel-image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.p-carousel-indicator.selected {
+  background-color: white;
+}
+
+.p-carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.p-carousel-indicator .p-link {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.p-highlight .p-link {
+  background-color: white;
+}
+
+.p-carousel-indicator .p-link:hover {
+  background-color: var(--color-primary);
+}
+
+.p-carousel-prev,
+.p-carousel-next {
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
