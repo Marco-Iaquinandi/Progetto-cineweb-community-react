@@ -8,7 +8,6 @@ import ImageSlider from "../ImageSlider";
 /* import "./HomePage.css"; */
 function HomePage() {
   const films = filmsData.films;
-  const films = filmsData.films;
   return (
     <>
       <ImageCarousel />
