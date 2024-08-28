@@ -1,6 +1,20 @@
 .p-inputtext:enabled:focus {
     outline: 0 none;
     outline-offset: 0;
-    box-shadow: 0 0 0 0.2rem black;
-    border-color: black;
+    box-shadow: 0 0 0 0.1rem var(--color-primary);
+    border-color: var(--color-primary);
+}
+.p-float-label:has(input:focus) label, .p-float-label:has(input.p-filled) label, .p-float-label:has(input:-webkit-autofill) label, .p-float-label:has(textarea:focus) label, .p-float-label:has(textarea.p-filled) label, .p-float-label:has(.p-inputwrapper-focus) label, .p-float-label:has(.p-inputwrapper-filled) label {
+    top: -.85rem;
+    font-size: 12px;
+}
+.input-error {
+    border: 2px solid red;
+}
+.input-success {
+    border: 2px solid rgb(91, 226, 91);
+}
+.bordo {
+    border: 1px solid #d6d6d6;
+    border-radius: 2px;
 }
