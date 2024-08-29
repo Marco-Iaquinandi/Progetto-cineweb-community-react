@@ -9,6 +9,7 @@ import FormLogIn from "./components/FormLogIn";
 import { UserProvider } from "./components/ContextLog";
 import "./index.css";
 import SeatMap from "./components/pages/SeatMap";
+import StructurePage from './components/pages/StructurePage';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
@@ -42,7 +43,7 @@ function App() {
               { url: "/", text: "Home" },
               { url: "#image-slider", text: "Coming Soon" },
               { url: "promo", text: "Promo" },
-              { url: "#", text: "Dove Trovarci" },
+              { url: "dove trovarci", text: "Dove Trovarci" },
               { url: "SeatMap", text: "Acquista biglietto" },
             ]}
           ></Navbar>
@@ -60,7 +61,8 @@ function App() {
               }
             />
             <Route path="/SeatMap" element={<SeatMap />} />
-          </Routes>
+            <Route path='/dove trovarci' element= { <StructurePage />} />
+        </Routes>
           <Footer />
           <ScrollToTopButton />
         </BrowserRouter>
