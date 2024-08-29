@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Sidebar } from "primereact/sidebar";
 import { Button } from "primereact/button";
 import { useState } from "react";
 import { InputText } from "primereact/inputtext";
-import { FloatLabel } from "primereact/floatlabel";
 import "./FormRegister.css";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 
@@ -52,112 +51,114 @@ function FormRegister({ onToggle, showRegister }) {
     }
 
     const registrazione = {
-      id: Math.random(),
       email: formRegistrazione.email,
       password: formRegistrazione.password,
-      confirmPassword: formRegistrazione.confirmPassword,
     };
 
-    setFormRegister({ email: "", password: "", confirmPassword: "" });
-    setErrors({ email: "", password: "", confirmPassword: "" });
-    onToggle();
-    alert("Registrazione Effetuata");
-
-    console.log(registrazione);
+    fetch("http://localhost:8000/utenti", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(registrazione),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        alert("Registrazione Effettuata");
+        setFormRegister({ email: "", password: "", confirmPassword: "" });
+        setErrors({ email: "", password: "", confirmPassword: "" });
+        onToggle();
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   }
 
+  const getClassName = (field) => {
+    if (errors[field]) {
+      return "input-error";
+    } else if (formRegistrazione[field]) {
+      return "input-success";
+    }
+    return "";
+  };
+
   return (
-    <div className="card flex justify-content-center">
-      <Sidebar
-        showCloseIcon={true}
-        position={"right"}
-        visible={showRegister}
-        blockScroll={true}
-        onHide={() => {
-          onToggle();
+    <Sidebar
+      showCloseIcon={true}
+      position={"right"}
+      visible={showRegister}
+      blockScroll={true}
+      onHide={() => {
+        onToggle();
+      }}
+      style={{ width: "20vw", height: "100vh" }}
+    >
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "space-between",
+          gap: "20px",
         }}
       >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
+        <div className="w-full md:w-5 flex flex-column align-items-center justify-content-center gap-3 py-5">
           <h2>Registrati</h2>
           <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <div className="w-full md:w-5 flex flex-column align-items-center justify-content-center gap-3 py-5">
-                <div className="card flex justify-content-center">
-                  <FloatLabel>
-                    <label htmlFor="email">Email</label>
-                    <InputText
-                      type="email"
-                      name="email"
-                      value={formRegistrazione.email}
-                      onChange={handleInputChange}
-                      className="form-control"
-                      id="email"
-                      required
-                    />
-                    {errors.email && (
-                      <small className="p-error">{errors.email}</small>
-                    )}
-                  </FloatLabel>
-                </div>
-              </div>
+            <div className="flex flex-wrap justify-content-center align-items-center gap-2">
+              <label className="w-6rem">Email</label>
+              <InputText
+                type="email"
+                placeholder="Email"
+                name="email"
+                value={formRegistrazione.email}
+                onChange={handleInputChange}
+                id="email"
+                required
+                className={`w-12rem bordo, ${getClassName("email")}`}
+              />
             </div>
-            <div className="form-group">
-              <div className="w-full md:w-5 flex flex-column align-items-center justify-content-center gap-3 py-5">
-                <div className="card flex justify-content-center">
-                  <FloatLabel>
-                    <label htmlFor="password">Password:</label>
-                    <InputText
-                      type="password"
-                      name="password"
-                      value={formRegistrazione.password}
-                      onChange={handleInputChange}
-                      className="form-control"
-                      id="password"
-                      required
-                    />
-                    {errors.password && (
-                      <small className="p-error">{errors.password}</small>
-                    )}
-                  </FloatLabel>
-                </div>
-              </div>
+            <div className="flex flex-wrap justify-content-center align-items-center gap-2">
+              <label className="w-6rem">Password</label>
+              <InputText
+                type="password"
+                placeholder="Password"
+                name="password"
+                value={formRegistrazione.password}
+                onChange={handleInputChange}
+                id="password"
+                required
+                className={`w-12rem bordo, ${getClassName("password")}`}
+              />
             </div>
-            <div className="form-group">
-              <div className="w-full md:w-5 flex flex-column align-items-center justify-content-center gap-3 py-5">
-                <div className="card flex justify-content-center">
-                  <FloatLabel>
-                    <label htmlFor="password">Confirm Password:</label>
-                    <InputText
-                      type="password"
-                      name="confirmPassword"
-                      value={formRegistrazione.confirmPassword}
-                      onChange={handleInputChange}
-                      className="form-control"
-                      id="ConfirmPassword"
-                      required
-                    />
-                    {errors.confirmPassword && (
-                      <small className="p-error">
-                        {errors.confirmPassword}
-                      </small>
-                    )}
-                  </FloatLabel>
-                </div>
-              </div>
+            <div className="flex flex-wrap justify-content-center align-items-center gap-2">
+              <label className="w-6rem">Confirm Password</label>
+              <InputText
+                type="password"
+                placeholder="Confirm Password"
+                name="confirmPassword"
+                value={formRegistrazione.confirmPassword}
+                onChange={handleInputChange}
+                id="ConfirmPassword"
+                required
+                className={`w-12rem bordo, ${getClassName("confirmPassword")}`}
+              />
             </div>
-            <div className="card flex justify-content-center">
-              <Button type="submit" label="Registrati" className="w-100" />
+
+            <div style={{ marginTop: "1.5rem", textAlign: "center", }}>
+              <Button
+                type="submit"
+                label="Registrati"
+                className="w-10rem mx-auto"
+                severity="secondary"
+                icon="pi pi-check"
+              />
             </div>
           </form>
         </div>
-      </Sidebar>
-    </div>
+      </div>
+    </Sidebar>
   );
 }
 

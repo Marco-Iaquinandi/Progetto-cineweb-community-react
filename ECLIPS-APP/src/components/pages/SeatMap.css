@@ -1,0 +1,68 @@
+.seat-map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.seat-map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 800px;
+}
+
+.seat-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.row-label {
+  width: 30px;
+  text-align: center;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.seat-sector {
+  display: flex;
+  margin-right: 10px;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+  position: relative;
+}
+
+.seat:hover {
+  background-color: lightgray;
+}
+
+.seat:hover::before {
+  content: attr(data-seat);
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+}
+
+.seat.selected {
+  background-color: orange;
+}

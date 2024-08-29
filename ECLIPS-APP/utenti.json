@@ -1,0 +1,34 @@
+{
+  "utenti": [
+    {
+      "id": "44f3",
+      "email": "Marco.iaquinandi@hotmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "76fe",
+      "email": "andre@me.com",
+      "password": "andrea123"
+    },
+    {
+      "id": "269a",
+      "email": "marco.iaq@hot.ad",
+      "password": "1234567"
+    },
+    {
+      "id": "f055",
+      "email": "admin@admin.com",
+      "password": "admin123"
+    },
+    {
+      "id": "bbcf",
+      "email": "mirko.@hotmail.com",
+      "password": "1234567"
+    },
+    {
+      "id": "e8f6",
+      "email": "admin@adim.ca",
+      "password": "1234567"
+    }
+  ]
+}
