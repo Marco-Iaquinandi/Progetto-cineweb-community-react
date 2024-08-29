@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from "./components/pages/HomePage";
 import "./index.css";
 import PromoPage from './components/pages/PromoPage';
+import StructurePage from './components/pages/StructurePage';
 import Navbar from './components/Navbar';
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import "primereact/resources/primereact.min.css";
@@ -22,12 +23,13 @@ function App () {
           { url: "/", text: "Home" },
           { url: "#", text: "Coming Soon" },
           { url: "promo", text: "Promo" },
-          { url: "#", text: "Dove Trovarci" },
+          { url: "dove trovarci", text: "Dove Trovarci" },
         ]}
       ></Navbar>
         <Routes>
           <Route path='/' element= { <HomePage />} />
           <Route path='/promo' element= { <PromoPage />} />
+          <Route path='/dove trovarci' element= { <StructurePage />} />
         </Routes>
         </BrowserRouter>
       </PrimeReactProvider>        

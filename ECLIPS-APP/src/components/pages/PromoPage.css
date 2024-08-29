@@ -1,0 +1,12 @@
+
+.promo-page {
+    /* Assicurati che il contenitore della pagina utilizzi tutto lo spazio disponibile */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Allinea gli elementi figli al centro */
+  }
+  
+  .button-container {
+    margin-top: 20px; /* Distanza tra l'ultimo elemento (lista) e il pulsante */
+    text-align: center; /* Centra il contenuto del wrapper */
+  }

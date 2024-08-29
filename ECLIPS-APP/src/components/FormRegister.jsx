@@ -4,7 +4,7 @@ import { Button } from "primereact/button";
 import { useState } from "react";
 import { InputText } from "primereact/inputtext";
 import { FloatLabel } from "primereact/floatlabel";
-import "./FormRegister.css"
+import "./FormRegister.css";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 
 function FormRegister({ onToggle, showRegister }) {
@@ -61,8 +61,7 @@ function FormRegister({ onToggle, showRegister }) {
     setFormRegister({ email: "", password: "", confirmPassword: "" });
     setErrors({ email: "", password: "", confirmPassword: "" });
     onToggle();
-    alert("Registrazione Effetuata")
-
+    alert("Registrazione Effetuata");
 
     console.log(registrazione);
   }
@@ -78,61 +77,85 @@ function FormRegister({ onToggle, showRegister }) {
           onToggle();
         }}
       >
-        <h2>Registrati</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <FloatLabel>
-              <label htmlFor="email">Email</label>
-              <InputText
-                type="email"
-                name="email"
-                value={formRegistrazione.email}
-                onChange={handleInputChange}
-                className="form-control"
-                id="email"
-                required
-              />
-              {errors.email && (
-                <small className="p-error">{errors.email}</small>
-              )}
-            </FloatLabel>
-          </div>
-          <div className="form-group">
-            <FloatLabel>
-              <label htmlFor="password">Password:</label>
-              <InputText
-                type="password"
-                name="password"
-                value={formRegistrazione.password}
-                onChange={handleInputChange}
-                className="form-control"
-                id="password"
-                required
-              />
-              {errors.password && (
-                <small className="p-error">{errors.password}</small>
-              )}
-            </FloatLabel>
-          </div>
-          <div className="form-group">
-            <FloatLabel>
-              <label htmlFor="password">Confirm Password:</label>
-              <InputText
-                type="password"
-                name="confirmPassword"
-                value={formRegistrazione.confirmPassword}
-                onChange={handleInputChange}
-                className="form-control"
-                id="ConfirmPassword"
-                required
-              />
-              {errors.confirmPassword && (
-                <small className="p-error">{errors.confirmPassword}</small>
-              )}
-            </FloatLabel>
-          </div>
-          <Button type="submit" label="Registrati" className="w-100" />
-        </form>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <h2>Registrati</h2>
+          <form onSubmit={handleSubmit}>
+            <div className="form-group">
+              <div className="w-full md:w-5 flex flex-column align-items-center justify-content-center gap-3 py-5">
+                <div className="card flex justify-content-center">
+                  <FloatLabel>
+                    <label htmlFor="email">Email</label>
+                    <InputText
+                      type="email"
+                      name="email"
+                      value={formRegistrazione.email}
+                      onChange={handleInputChange}
+                      className="form-control"
+                      id="email"
+                      required
+                    />
+                    {errors.email && (
+                      <small className="p-error">{errors.email}</small>
+                    )}
+                  </FloatLabel>
+                </div>
+              </div>
+            </div>
+            <div className="form-group">
+              <div className="w-full md:w-5 flex flex-column align-items-center justify-content-center gap-3 py-5">
+                <div className="card flex justify-content-center">
+                  <FloatLabel>
+                    <label htmlFor="password">Password:</label>
+                    <InputText
+                      type="password"
+                      name="password"
+                      value={formRegistrazione.password}
+                      onChange={handleInputChange}
+                      className="form-control"
+                      id="password"
+                      required
+                    />
+                    {errors.password && (
+                      <small className="p-error">{errors.password}</small>
+                    )}
+                  </FloatLabel>
+                </div>
+              </div>
+            </div>
+            <div className="form-group">
+              <div className="w-full md:w-5 flex flex-column align-items-center justify-content-center gap-3 py-5">
+                <div className="card flex justify-content-center">
+                  <FloatLabel>
+                    <label htmlFor="password">Confirm Password:</label>
+                    <InputText
+                      type="password"
+                      name="confirmPassword"
+                      value={formRegistrazione.confirmPassword}
+                      onChange={handleInputChange}
+                      className="form-control"
+                      id="ConfirmPassword"
+                      required
+                    />
+                    {errors.confirmPassword && (
+                      <small className="p-error">
+                        {errors.confirmPassword}
+                      </small>
+                    )}
+                  </FloatLabel>
+                </div>
+              </div>
+            </div>
+            <div className="card flex justify-content-center">
+              <Button type="submit" label="Registrati" className="w-100" />
+            </div>
+          </form>
+        </div>
       </Sidebar>
     </div>
   );

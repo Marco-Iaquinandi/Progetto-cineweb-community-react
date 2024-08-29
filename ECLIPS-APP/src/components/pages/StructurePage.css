@@ -1,0 +1,14 @@
+.cinema-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.cinema-container > div {
+    flex: 0 1 calc(33.333% - 20px); 
+    max-width: calc(33.333% - 20px); 
+    box-sizing: border-box; 
+    padding: 10px;
+}
