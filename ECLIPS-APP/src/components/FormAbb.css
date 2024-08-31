@@ -1,0 +1,119 @@
+.form-abb-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-abb-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+}
+
+
+.form-abb-close-btn {
+    background: transparent;
+    border: none;
+    color: var(--color-primary);
+    font-size: 1.5em;
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    cursor: pointer;
+    outline: none; 
+    transition: color 0.3s; 
+}
+
+
+.form-abb-close-btn:hover,
+.form-abb-close-btn:focus {
+    color: var(--color-primary); 
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.7); 
+    border: none;
+    box-shadow: none;
+}
+
+
+.form-abb-title {
+    margin: 0; 
+    color: var(--color-primary); 
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.form-abb-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+}
+
+
+.form-abb-label {
+    margin: 10px 0 5px; 
+    color: black; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    cursor: pointer; 
+}
+
+
+.form-abb-input,
+.form-abb-select {
+    padding: 10px;
+    border: 2px solid var(--color-primary); 
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 1em;
+    width: 100%; 
+    transition: border-color 0.3s, box-shadow 0.3s, border-width 0.3s; 
+}
+
+
+.form-abb-input:focus,
+.form-abb-select:focus {
+    border-color: #b69b70;
+    box-shadow: 0 0 0 2px #b69b70;
+    transition: all 0.3s;
+}
+
+
+.form-abb-error {
+    color: red; 
+    font-size: 0.875em;
+    margin-top: 5px; 
+}
+
+
+.form-abb-button {
+    background: var(--color-primary); 
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s; 
+}
+
+
+.form-abb-button:hover {
+    border-color: #b69b70;
+    box-shadow: 0 0 0 2px #b69b70;
+    color: white;
+    text-shadow: 0px 0px 20px white;
+}

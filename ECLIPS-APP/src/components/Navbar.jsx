@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import FormLogIn from "./FormLogIn";
 import FormRegister from "./FormRegister";
 import { UserContext } from "./ContextLog";
-import { Menubar } from 'primereact/menubar';
-import { Badge } from 'primereact/badge';
-import { Avatar } from 'primereact/avatar';
+import { Menubar } from "primereact/menubar";
+import { Badge } from "primereact/badge";
+import { Avatar } from "primereact/avatar";
 import "primeicons/primeicons.css";
 
 function Navbar({}) {
@@ -14,11 +14,10 @@ function Navbar({}) {
   const [isToggled, setIsToggled] = useState(false);
   const [showRegister, setShowRegister] = useState(false);
 
-
-
   const handleClick = () => {
     setIsToggled(!isToggled);
   };
+
   const handleShowRegister = () => {
     setShowRegister(!showRegister);
   };
@@ -27,27 +26,28 @@ function Navbar({}) {
     setShowRegister(true);
   };
 
-  const autanticationlogin = user ?  {
-    label: "LOGOUT",
-    icon: "pi pi-sign-out",
-    command:  logout, 
-  }
-: {
-    label: "LOGIN",
-    icon: "pi pi-user",
-    items: [{
-      label: "Login",
-      icon: "pi pi-user",
-      command: handleClick,
-
-    },
-    {
-      label: "Registrati",
-      icon: "pi pi-plus",
-      command: handleShowRegister,
-    }
-  ]
-  };
+  const autanticationlogin = user
+    ? {
+        label: "LOGOUT",
+        icon: "pi pi-sign-out",
+        command: logout,
+      }
+    : {
+        label: "LOGIN",
+        icon: "pi pi-user",
+        items: [
+          {
+            label: "Login",
+            icon: "pi pi-user",
+            command: handleClick,
+          },
+          {
+            label: "Registrati",
+            icon: "pi pi-plus",
+            command: handleShowRegister,
+          },
+        ],
+      };
 
   const itemRenderer = (item) => (
     <a className="flex align-items-center p-menuitem-link">
@@ -69,28 +69,31 @@ function Navbar({}) {
         <span>{link.label}</span>
       </Link>
     );
-  }
+  };
 
-  const items =  [
+  const items = [
     {
       label: "Home",
       icon: "pi pi-home",
-      template: itemlink
+      url: "/",
+      template: itemlink,
     },
     {
       label: "COMING SOON",
       icon: "pi pi-star",
-      template: itemlink
+      template: itemlink,
     },
     {
       label: "PROMO",
       icon: "pi pi-search",
-      template: itemlink
+      url: "promo",
+      template: itemlink,
     },
     {
       label: "DOVE TROVARCI",
       icon: "pi pi-envelope",
-      template: itemlink
+      url: "dove trovarci",
+      template: itemlink,
     },
     autanticationlogin,
   ];
@@ -119,7 +122,21 @@ function Navbar({}) {
         <ul className="navbar-links">
           {links.map((link, index) => (
             <li className="linkNav" key={index}>
-              <Link to={link.url}>{link.text}</Link>
+              {link.url.startsWith("#") ? (
+                <a
+                  href={link.url}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document
+                      .querySelector(link.url)
+                      .scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
+                  {link.text}
+                </a>
+              ) : (
+                <Link to={link.url}>{link.text}</Link>
+              )}
             </li>
           ))}
         </ul>
@@ -155,7 +172,11 @@ function Navbar({}) {
       <div className="card">
         <Menubar model={items} start={start} end={end} />
       </div>
-      <FormLogIn isToggled={isToggled} onToggle={handleClick} onRegisterClick={handleRegisterClick} />
+      <FormLogIn
+        isToggled={isToggled}
+        onToggle={handleClick}
+        onRegisterClick={handleRegisterClick}
+      />
       <FormRegister showRegister={showRegister} onToggle={handleShowRegister} />
     </>
   );
