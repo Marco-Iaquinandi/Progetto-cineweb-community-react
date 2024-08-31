@@ -75,6 +75,7 @@ function Navbar({}) {
     {
       label: "Home",
       icon: "pi pi-home",
+      url: "/",
       template: itemlink,
     },
     {
@@ -85,11 +86,13 @@ function Navbar({}) {
     {
       label: "PROMO",
       icon: "pi pi-search",
+      url: "promo",
       template: itemlink,
     },
     {
       label: "DOVE TROVARCI",
       icon: "pi pi-envelope",
+      url: "dove trovarci",
       template: itemlink,
     },
     autanticationlogin,
