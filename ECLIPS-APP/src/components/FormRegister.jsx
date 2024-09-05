@@ -105,9 +105,8 @@ function FormRegister({ onToggle, showRegister }) {
       >
         <div className="w-full md:w-5 flex flex-column align-items-center justify-content-center gap-3 py-5">
           <h2>Registrati</h2>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className="w-full md:w-5 flex flex-column align-items-center justify-content-center gap-3 py-5">
             <div className="flex flex-wrap justify-content-center align-items-center gap-2">
-              <label className="w-6rem">Email</label>
               <InputText
                 type="email"
                 placeholder="Email"
@@ -116,11 +115,10 @@ function FormRegister({ onToggle, showRegister }) {
                 onChange={handleInputChange}
                 id="email"
                 required
-                className={`w-12rem bordo, ${getClassName("email")}`}
+                className={`w-12rem ${getClassName("email")}`}
               />
             </div>
             <div className="flex flex-wrap justify-content-center align-items-center gap-2">
-              <label className="w-6rem">Password</label>
               <InputText
                 type="password"
                 placeholder="Password"
@@ -129,11 +127,10 @@ function FormRegister({ onToggle, showRegister }) {
                 onChange={handleInputChange}
                 id="password"
                 required
-                className={`w-12rem bordo, ${getClassName("password")}`}
+                className={`w-12rem  ${getClassName("password")}`}
               />
             </div>
             <div className="flex flex-wrap justify-content-center align-items-center gap-2">
-              <label className="w-6rem">Confirm Password</label>
               <InputText
                 type="password"
                 placeholder="Confirm Password"
@@ -142,16 +139,16 @@ function FormRegister({ onToggle, showRegister }) {
                 onChange={handleInputChange}
                 id="ConfirmPassword"
                 required
-                className={`w-12rem bordo, ${getClassName("confirmPassword")}`}
+                className={`w-12rem ${getClassName("confirmPassword")}`}
               />
             </div>
 
-            <div style={{ marginTop: "1.5rem", textAlign: "center", }}>
+            <div style={{ marginTop: "1.5rem", textAlign: "center" }}>
               <Button
                 type="submit"
                 label="Registrati"
                 className="w-10rem mx-auto"
-                severity="secondary"
+                severity="primary"
                 icon="pi pi-check"
               />
             </div>

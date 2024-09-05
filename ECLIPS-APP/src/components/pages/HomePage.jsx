@@ -15,6 +15,7 @@ function HomePage() {
         {films.map((film) => (
           <Locandine
             key={film.idFilm}
+            id={film.idFilm}
             title={film.titolo}
             copertina={`../../src/assets/img/${film.copertina}`}
           ></Locandine>

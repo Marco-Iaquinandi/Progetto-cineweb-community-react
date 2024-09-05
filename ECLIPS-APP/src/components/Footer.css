@@ -47,7 +47,7 @@ h3 {
   text-decoration: underline;
   color: white;
   transition: all 0.5s linear;
-  border: solid transparent;
+  /* border: solid transparent; */
   border-width: 0 0 1px;
   padding-bottom: 2px;
 }

@@ -108,10 +108,10 @@ function Navbar({}) {
   );
   const end = (
     <div className="flex align-items-center gap-2">
-      <Avatar
+      {/* <Avatar
         image="https://primefaces.org/cdn/primereact/images/avatar/amyelsner.png"
         shape="circle"
-      />
+      /> */}
     </div>
   );
 
