@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Carousel } from "primereact/carousel";
 import { ProductService } from "./pages/ImaginiSlider";
+import { Link } from "react-router-dom";
+import { Button } from "primereact/button";
 import "./ImageSlider.css";
 
-function ImageSlider() {
+function ImageSlider(id) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -23,7 +25,13 @@ function ImageSlider() {
             src={`../../src/assets/img/${product.image}`}
             alt={product.name}
             className="slider-image"
-          />
+          ></img>
+          <div className="buttons-buy-container">
+            <Link to={`/Filmdescrizione/${id}`}>
+              <Button label="ACQUISTA ORA" className="btn-buy"></Button>
+            </Link>
+            <Button label="Trailer" className="btn-trailer"></Button>
+          </div>
         </div>
       </div>
     );

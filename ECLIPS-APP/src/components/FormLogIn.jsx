@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useContext } from "react";
-import { Dialog } from "primereact/dialog";
 import { InputText } from "primereact/inputtext";
 import { Button } from "primereact/button";
 import { UserContext } from "./ContextLog";
 import { Sidebar } from "primereact/sidebar";
+import "./FormLogin.css";
 
 const FormLogIn = ({ isToggled, onToggle, onRegisterClick }) => {
   const { login } = useContext(UserContext);
@@ -47,6 +47,7 @@ const FormLogIn = ({ isToggled, onToggle, onRegisterClick }) => {
       position={"right"}
       visible={isToggled}
       blockScroll={true}
+      
       onHide={() => {
         onToggle();
       }}
