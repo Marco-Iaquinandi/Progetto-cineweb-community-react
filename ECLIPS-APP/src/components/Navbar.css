@@ -13,7 +13,7 @@
   padding: 2rem;
   border-radius: 10px;
   margin-bottom: 1rem;
-} 
+}
 .p-menubar {
   display: flex;
   align-items: center;
@@ -27,14 +27,41 @@
   flex-wrap: wrap;
   gap: 2rem;
 } */
- .p-menubar-root-list{
+.p-menubar-root-list {
   background: url(../assets/img/forme-o-struttura-geometriche-astratte-del-fondo_1194-301824.jpg);
-  opacity: 0.80;
- }
+  opacity: 0.8;
+}
 .p-menuitem-text,
 .p-menuitem-link {
   color: white;
   gap: 0.4rem;
+}
+.p-menuitem-link,
+.p-menuitem-text {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+.p-menuitem-link:hover {
+  color: #b69b70;
+  transform: scale(1.1);
+}
+
+.p-menuitem-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #b69b70;
+  transition: width 0.3s;
+  margin-top: 5px;
+}
+.p.menuitem-link:hover::after {
+  width: 100%;
+}
+.p-menuitem-link:active {
+  transform: translateY(2px);
 }
 
 .p-menubar
@@ -74,10 +101,10 @@
   padding: 0.25rem 0;
   background: black;
   border: 0 none;
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12);
   width: 12.5rem;
 }
-
 
 .p-menubar .p-menuitem.p-highlight > .p-menuitem-content {
   color: #0e7490;
@@ -92,6 +119,14 @@
 }
 .p-menubar .p-menuitem.p-highlight.p-focus > .p-menuitem-content {
   background: none;
+}
+
+.p-menubar .p-submenu-list {
+  display: none;
+  position: absolute;
+  top: 50px;
+  z-index: 5;
+  
 }
 
 .navbar-links {

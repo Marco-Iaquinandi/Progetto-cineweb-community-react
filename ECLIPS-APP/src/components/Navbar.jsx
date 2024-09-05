@@ -35,6 +35,7 @@ function Navbar({}) {
     : {
         label: "LOGIN",
         icon: "pi pi-user",
+        className: "btn-logIn",
         items: [
           {
             label: "Login",
@@ -79,19 +80,19 @@ function Navbar({}) {
       template: itemlink,
     },
     {
-      label: "COMING SOON",
-      icon: "pi pi-star",
+      label: "Coming Soon",
+      icon: "pi pi-video",
       template: itemlink,
     },
     {
-      label: "PROMO",
-      icon: "pi pi-search",
+      label: "Promo",
+      icon: "pi pi-ticket",
       url: "promo",
       template: itemlink,
     },
     {
-      label: "DOVE TROVARCI",
-      icon: "pi pi-envelope",
+      label: "Dove Trovarci",
+      icon: "pi pi-map-marker",
       url: "dove trovarci",
       template: itemlink,
     },

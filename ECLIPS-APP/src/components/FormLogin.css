@@ -1,0 +1,21 @@
+.p-sidebar-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+.p-sidebar .p-sidebar-header .p-sidebar-close, .p-sidebar .p-sidebar-header .p-sidebar-icon {
+    width: 2rem;
+    height: 2rem;
+    color: #6b7280;
+    border: 0 none;
+    background: transparent;
+    border-radius: 50%;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.p-sidebar .p-sidebar-header {
+    padding: none;
+    display: none;
+}
