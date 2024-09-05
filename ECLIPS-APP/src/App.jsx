@@ -21,6 +21,8 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import Footer from "./components/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import FilmDesc from "./components/pages/FilmDesc";
+
 
 function App() {
   const [showRegister, setShowRegister] = useState(false);
@@ -62,6 +64,7 @@ function App() {
             />
             <Route path="/SeatMap" element={<SeatMap />} />
             <Route path='/dove trovarci' element= { <StructurePage />} />
+            <Route path="/Filmdescrizione/:id" element= { <FilmDesc />} />
         </Routes>
           <Footer />
           <ScrollToTopButton />

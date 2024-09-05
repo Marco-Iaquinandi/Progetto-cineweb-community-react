@@ -13,7 +13,7 @@
   padding: 2rem;
   border-radius: 10px;
   margin-bottom: 1rem;
-}
+} 
 .p-menubar {
   display: flex;
   align-items: center;
@@ -21,15 +21,20 @@
   gap: 5rem;
   background: none;
 }
-.p-menubar-root-list {
+/* .p-menubar-root-list {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-}
+} */
+ .p-menubar-root-list{
+  background: url(../assets/img/forme-o-struttura-geometriche-astratte-del-fondo_1194-301824.jpg);
+  opacity: 0.80;
+ }
 .p-menuitem-text,
 .p-menuitem-link {
   color: white;
+  gap: 0.4rem;
 }
 
 .p-menubar
