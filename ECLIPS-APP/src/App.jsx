@@ -65,12 +65,14 @@ function App() {
             <Route path="/SeatMap" element={<SeatMap />} />
             <Route path='/dove trovarci' element= { <StructurePage />} />
             <Route path="/Filmdescrizione/:id" element= { <FilmDesc />} />
+           
         </Routes>
           <Footer />
           <ScrollToTopButton />
         </BrowserRouter>
       </PrimeReactProvider>
     </UserProvider>
+  
   );
 }
 

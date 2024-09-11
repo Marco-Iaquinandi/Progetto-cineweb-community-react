@@ -1,3 +1,4 @@
+
 .carousel-container {
   width: 100%;
   max-width: 100vw;
@@ -5,6 +6,7 @@
   overflow: hidden;
 }
 
+/* Stile per le immagini del carousel, occupano tutta la larghezza e altezza della viewport */
 .carousel-image {
   width: 100%;
   height: 65vh;
@@ -21,8 +23,9 @@
 .p-carousel-next {
   position: absolute;
   transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente */
   color: white;
-  z-index: 1;
+  z-index: 10;
   width: 50px;
   height: 50px;
   border-radius: 50%;
