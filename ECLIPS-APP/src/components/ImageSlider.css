@@ -1,29 +1,25 @@
-/* Stile del contenitore dello slider */
 .slider-container {
-  max-width: 100%; /* Larghezza massima del carosello */
-  margin: auto; /* Centratura del carosello orizzontalmente */
-  position: relative; /* Necessario per posizionare le frecce di navigazione */
-  overflow: hidden; /* Assicura che nulla fuoriesca dal contenitore */
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Stile per i singoli elementi (slide) */
 .slick-slide {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box; /* Include padding e border nella larghezza totale */
+  box-sizing: border-box;
 }
 
-/* Stile delle immagini nel carosello */
 .slider-image {
-  width: 100%; /* Adatta l'immagine alla larghezza del contenitore della slide */
-  height: 400px; /* Mantiene le proporzioni dell'immagine */
-  max-width: 300px; /* Larghezza massima per le immagini */
-  object-fit: cover; /* Mantiene l'aspetto corretto dell'immagine */
-  margin: auto; /* Centra orizzontalmente l'immagine */
+  width: 100%;
+  height: 400px;
+  max-width: 300px;
+  object-fit: cover;
+  margin: auto;
 }
 
-/* Stili per le frecce di navigazione */
 .slick-prev,
 .slick-next {
   width: 30px;
@@ -35,9 +31,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute; /* Posizionamento assoluto per allineare le frecce al contenitore */
-  top: 50%; /* Centra verticalmente */
-  transform: translateY(-50%); /* Corregge l'allineamento verticale */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .slick-prev:before,
@@ -47,33 +43,27 @@
 }
 
 .slick-prev {
-  left: 10px; /* Posizione della freccia sinistra */
+  left: 10px;
 }
 
 .slick-next {
-  right: 10px; /* Posizione della freccia destra */
+  right: 10px;
 }
 
 .slick-prev:hover,
 .slick-next:hover {
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); /* Colore di sfondo delle frecce al passaggio del mouse */
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* Stile per i punti di navigazione (dots) */
 .slick-dots {
-  bottom: 10px; /* Posiziona i punti in basso */
-  text-align: center; /* Centra i punti */
+  bottom: 10px;
+  text-align: center;
 }
 
 .slick-dots li button:before {
-  color: #fff; /* Colore dei punti */
+  color: #fff;
 }
 
 .slick-dots li.slick-active button:before {
-  color: #ddd; /* Colore del punto attivo */
+  color: #ddd;
 }
