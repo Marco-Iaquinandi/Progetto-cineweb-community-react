@@ -26,18 +26,20 @@ const FormLogIn = ({ isToggled, onToggle, onRegisterClick }) => {
     const user = utente.find(
       (user) => user.email === email && user.password === password
     );
-    if (error) {
-      (user) => user.email === "" && user.password === "";
-      setError("Email e password incorrect");
-    }
-    if (user) {
-      login(user);
-      onToggle();
-      setEmail("");
-      setPassword("");
-      setError("");
+    if (!email && !password) {
+      setError("Inserire email e password");
+    } else if (!email) {
+      setError("Inserire email");
+    } else if (!password) {
+      setError("Inserire password");
+    } else if (!user) {
+      setError("Email e password non corretti");
     } else {
-      setError("Email o password errati");
+      login(user);
+      onToggle('');
+      setEmail('');
+      setPassword('');
+      setError('');
     }
   };
 
@@ -47,9 +49,9 @@ const FormLogIn = ({ isToggled, onToggle, onRegisterClick }) => {
       position={"right"}
       visible={isToggled}
       blockScroll={true}
-      
       onHide={() => {
         onToggle();
+        setError("");
       }}
       style={{ width: "20vw", height: "100vh" }}
     >
@@ -58,9 +60,25 @@ const FormLogIn = ({ isToggled, onToggle, onRegisterClick }) => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          justifyContent: "center",
+          height: "50vh",
         }}
       >
-        <h1>Accedi</h1>
+        <h1
+          style={{
+            background: "black",
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            height: "44%",
+            color: "white",
+          }}
+        >
+          Accedi
+        </h1>
+
         <div className="w-full md:w-5 flex flex-column align-items-center justify-content-center gap-3 py-5">
           {error && <p style={{ color: "red" }}>{error}</p>}
           <div className="flex flex-wrap justify-content-center align-items-center gap-2">
@@ -70,7 +88,7 @@ const FormLogIn = ({ isToggled, onToggle, onRegisterClick }) => {
               placeholder="Email"
               type="email"
               onChange={(e) => setEmail(e.target.value)}
-              className="w-12rem"
+              className="w-18rem border-1 border-gray-500"
             />
           </div>
           <div className="flex flex-wrap justify-content-center align-items-center gap-2">
@@ -80,23 +98,27 @@ const FormLogIn = ({ isToggled, onToggle, onRegisterClick }) => {
               type="password"
               placeholder="Password"
               onChange={(e) => setPassword(e.target.value)}
-              className="w-12rem"
+              className="w-18rem border-1 border-gray-500"
             />
           </div>
-          <Button
-            label="Login"
-            icon="pi pi-user"
-            severity="success"
-            onClick={handleSubmit}
-            className="w-10rem mx-auto"
-          ></Button>
-          <Button
-            label="Registrati"
-            severity="primary"
-            icon="pi pi-plus"
-            className="w-10rem mx-auto"
-            onClick={onRegisterClick}
-          ></Button>
+          <div className="flex flex-wrap justify-content-center align-items-center gap-2">
+            <Button
+              label="Login"
+              icon="pi pi-user"
+              severity="success"
+              onClick={handleSubmit}
+              className="w-18rem mx-auto"
+            ></Button>
+          </div>
+          <div className="flex flex-wrap justify-content-center align-items-center gap-2">
+            <Button
+              label="Registrati"
+              severity="primary"
+              icon="pi pi-plus"
+              className="w-18rem mx-auto"
+              onClick={onRegisterClick}
+            ></Button>
+          </div>
         </div>
       </div>
     </Sidebar>
