@@ -4,66 +4,98 @@
       "idFilm": 0,
       "titolo": "CHALLENGERS",
       "genere": "Drammatico",
+      "durata": "131 min",
       "descrizione": "Challengers racconta la storia di Tashi Ducan, una giovane e talentuosa tennista destinata a una brillante carriera internazionale. Il suo talento non passa inosservato, specialmente ai colleghi tennisti Art e Patrick. I due ragazzi, molto amici tra loro, sono totalmente incantati da Toshi.",
-      "autore": "Marco",
+      "autore": "Luca Guadagnino",
+      "distribuzione": "Warner Bros. Pictures",
       "copertina": "challengers.jpg",
-      "orari": ["21:30", "22:30", "23:00"]
+      "orari": ["18:00", "20:30", "23:00"],
+      "background": "scena-challengers.jpg"
     },
     {
       "idFilm": 1,
       "titolo": "BACK TO BLACK",
-      "descrizione": "lorem ipsum dolor sit amet",
-      "autore": "Marco",
+      "genere": "Autobiografico",
+      "durata": "122 min",
+      "descrizione": "Vita e musica della musicista londinese Amy Winehouse, che ha iniziato come cantante jazz per poi crescere fino a diventare una superstar della discografia mondiale, vincitrice di un Grammy.",
+      "autore": "Sam Taylor-Johnson",
+      "distribuzione": "Universal Pictures",
       "copertina": "btb1.jpg",
-      "orari": ["21:30", "22:30", "23:00"]
+      "orari": ["18:00", "20:20", "22:40"],
+      "background":"scena-backtoblack.jpg"
     },
     {
       "idFilm": 2,
       "titolo": "CIVIL WAR",
-      "descrizione": "Civili war e un film di guerra",
-      "autore": "Marco",
+      "genere": "Guerra",
+      "durata": "119 min",
+      "descrizione": "In una New York a corto di acqua e dove la guerra è arrivata in forma di terrorismo, con attentati kamikaze, il giornalista Joel e la fotografa Lee hanno deciso che è rimasta una sola storia da raccontare: intervistare il Presidente degli Stati Uniti, da tempo trinceratosi a Washington mentre dilaga una feroce Guerra Civile.",
+      "autore": "Alex Garland",
+      "distribuzione": " 01 Distribution",
       "copertina": "civil-war.jpg",
-      "orari": ["21:30", "22:30"]
+      "orari": ["18:00", "20:20", "22:40"],
+      "background":"scena-civilwar.jpg"
     },
     {
       "idFilm": 3,
-      "titolo": "GHOSTBUSTER-MINACCIAGLACIALE",
-      "descrizione": "lorem ipsum dolor sit amet",
-      "autore": "Marco",
+      "titolo": "GHOSTBUSTERS-MINACCIA GLACIALE",
+      "genere": "Fantascienza",
+      "durata": "116 min",
+      "descrizione": "La famiglia Spengler torna dove tutto ha avuto inizio, l'iconica caserma dei pompieri sede dei Ghostbusters a New York, per collaborare con gli acchiappafantasmi originali e salvare il mondo da una glaciazione.",
+      "autore": "Gil Kenan",
+      "distribuzione": "Eagle Pictures",
       "copertina": "ghostbusters-minaccia-glacial.jpg",
-      "orari": ["20:30", "21:30", "22:30", "23:00"]
+      "orari": ["18:00", "20:20", "22:40"],
+      "background": "scena-ghostbusters.jpg"
     },
     {
       "idFilm": 4,
       "titolo": "GODZILLA E KONG - IL NUOVO IMPERO",
-      "autore": "Marco",
+      "genere": "Avventura",
+      "durata": "115 min",
+      "descrizione":"Godzilla e Kong si trovano a dover affrontare una minaccia colossale nascosta nelle profondità del pianeta, che mette in discussione la loro stessa esistenza e la sopravvivenza della razza umana.",
+      "autore": "Adam Wingard",
+      "distribuzione": "Warner Bros. Italia",
       "copertina": "godzilla-e-kong-il-nuovo-imper.jpg",
-      "orari": ["21:30", "22:30", "23:00"]
+      "orari": ["18:00", "20:20", "22:40"],
+      "background": "scena-godzilla-e-kong.jpg"
     },
 
     {
       "idFilm": 5,
       "titolo": "KUNG FU PANDA 4",
-      "descrizione": "lorem ipsum dolor sit amet",
-      "autore": "Marco",
+      "genere": "Animazione",
+      "durata": "94 min",
+      "descrizione": "Quando una potente mutaforma mette gli occhi sul Bastone della Saggezza di Po, quest'ultimo si rende conto di aver bisogno di aiuto. Facendo squadra con una volpe corsara dalla grande prontezza di spirito, Po fa una scoperta.",
+      "autore": "Mike Mitchell",
+      "distribuzione":"Universal Pictures",
       "copertina": "kung-fu-panda-4.jpg",
-      "orari": ["21:30", "22:30", "23:00"]
+      "orari": ["16:00", "18:00", "20:30"],
+      "background": "scena-kungfu-panda.jpeg"
     },
     {
       "idFilm": 6,
       "titolo": "SPY FAMILY",
-      "descrizione": "lorem ipsum dolor sit amet",
-      "autore": "Marco",
+      "genere": "Spionaggio",
+      "durata": "110 min",
+      "descrizione": "Dopo aver completato con successo una missione per WISE, Loid Forger apprende dal suo contatto, Sylvia Sherwood, che verrà riassegnato e sostituito nell'Operazione Strix a causa degli ordini dei piani alti, ma potrebbe essere in grado di impedirlo se fa progressi significativi.",
+      "autore": "Takashi Katagiri",
+      "distribuzione": "Sony Pictures Entertainment Italia",
       "copertina": "spy-x-family-code-white.jpg",
-      "orari": ["21:30", "22:30", "23:00"]
+      "orari": ["16:00", "18:15", "20:30"],
+      "background": "scena-spyfamily.jpg"
     },
     {
       "idFilm": 7,
       "titolo": "UN MONDO A PARTE",
-      "descrizione": "lorem ipsum dolor sit amet",
-      "autore": "Marco",
+      "genere": "Commedia",
+      "durata": "112 min",
+      "descrizione": "Per il maestro elementare Michele Cortese sembra aprirsi una nuova vita. Dopo 40 anni di insegnamento nella giungla romana, riesce a farsi assegnare all'Istituto Cesidio Gentile detto Jurico: una scuola composta da un'unica pluriclasse, con bambini dai 7 ai 10 anni, nel cuore del Parco Nazionale d'Abruzzo. Grazie all'aiuto della vicepreside Agnese e dei bambini, supera la sua inadeguatezza metropolitana e diventa uno di loro.",
+      "autore": "Riccardo Milani",
+      "distribuzione": "Medusa Film",
       "copertina": "un-mondo-a-parte.jpg",
-      "orari": ["21:30", "22:30", "23:00"]
+      "orari": ["18:00", "20:20", "22:40"],
+      "background": "scena-un-mondo-a-parte.jpg"
     }
   ]
 }
