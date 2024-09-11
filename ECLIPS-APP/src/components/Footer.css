@@ -1,4 +1,4 @@
-.allineamento {
+/*.allineamento {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,7 +47,6 @@ h3 {
   text-decoration: underline;
   color: white;
   transition: all 0.5s linear;
-  /* border: solid transparent; */
   border-width: 0 0 1px;
   padding-bottom: 2px;
 }
@@ -61,4 +60,118 @@ h3 {
 .classe-develope {
   font-size: 12px;
   color: gray;
+}*/
+
+.allineamento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  padding: 3rem;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+  background-color: rgba(155, 153, 153, 0.155);
+  min-height: 30rem; /* Aumento altezza minima */
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer-container {
+  text-align: left;
+}
+
+h3 {
+  color: #ffffffe6;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-link li {
+  margin-bottom: 15px;
+}
+
+.footer-link a {
+  text-decoration: none;
+  color: gray;
+  display: block;
+}
+
+.footer-link a:hover {
+  text-decoration: underline;
+  color: white;
+  transition: all 0.5s linear;
+  border-width: 0 0 1px;
+  padding-bottom: 2px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 40px; /* Aumento margine per più spazio */
+  padding-top: 20px; /* Aggiunto padding extra */
+}
+
+.copyright p,
+.classe-develope {
+  font-size: 12px;
+  color: gray;
+}
+
+/* Media query per tablet */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 90%;
+  }
+
+  .footer-container {
+    margin-bottom: 20px;
+  }
+}
+
+/* Media query per smartphone */
+@media (max-width: 480px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .footer-container {
+    margin-bottom: 20px;
+  }
+
+  .footer-container h3 {
+    font-size: 16px;
+  }
+
+  .footer-link li {
+    margin-bottom: 10px;
+  }
+
+  .footer-link a {
+    font-size: 14px;
+  }
+
+  .copyright {
+    margin-top: 30px; /* Spazio extra per il copyright su smartphone */
+    padding-top: 20px; /* Più padding per visibilità */
+  }
+
+  .copyright p,
+  .classe-develope {
+    font-size: 10px;
+  }
 }
