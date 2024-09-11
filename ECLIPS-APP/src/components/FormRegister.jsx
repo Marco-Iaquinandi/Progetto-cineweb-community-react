@@ -79,10 +79,9 @@ function FormRegister({ onToggle, showRegister }) {
       return "input-error";
     } else if (formRegistrazione[field]) {
       return "input-success";
-    }
-    return "";
+    } 
+    return "border-1 border-gray-500";
   };
-
   return (
     <Sidebar
       showCloseIcon={true}
@@ -91,6 +90,7 @@ function FormRegister({ onToggle, showRegister }) {
       blockScroll={true}
       onHide={() => {
         onToggle();
+        setErrors("");
       }}
       style={{ width: "20vw", height: "100vh" }}
     >
@@ -99,12 +99,13 @@ function FormRegister({ onToggle, showRegister }) {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          justifyContent: "space-between",
+          justifyContent: "center",
+          height: "50vh",
           gap: "20px",
         }}
       >
         <div className="w-full md:w-5 flex flex-column align-items-center justify-content-center gap-3 py-5">
-          <h2>Registrati</h2>
+          <h1 style={{background: "black", width: "240%", height: "20vh", textAlign:"center", alignContent: "center",color:"white"}}>Registrati</h1>
           <form onSubmit={handleSubmit} className="w-full md:w-5 flex flex-column align-items-center justify-content-center gap-3 py-5">
             <div className="flex flex-wrap justify-content-center align-items-center gap-2">
               <InputText
@@ -115,7 +116,7 @@ function FormRegister({ onToggle, showRegister }) {
                 onChange={handleInputChange}
                 id="email"
                 required
-                className={`w-12rem ${getClassName("email")}`}
+                className={`w-18rem ${getClassName("email")}`}
               />
             </div>
             <div className="flex flex-wrap justify-content-center align-items-center gap-2">
@@ -127,7 +128,7 @@ function FormRegister({ onToggle, showRegister }) {
                 onChange={handleInputChange}
                 id="password"
                 required
-                className={`w-12rem  ${getClassName("password")}`}
+                className={`w-18rem  ${getClassName("password")}`}
               />
             </div>
             <div className="flex flex-wrap justify-content-center align-items-center gap-2">
@@ -139,7 +140,7 @@ function FormRegister({ onToggle, showRegister }) {
                 onChange={handleInputChange}
                 id="ConfirmPassword"
                 required
-                className={`w-12rem ${getClassName("confirmPassword")}`}
+                className={`w-18rem ${getClassName("confirmPassword")}`}
               />
             </div>
 
@@ -147,7 +148,7 @@ function FormRegister({ onToggle, showRegister }) {
               <Button
                 type="submit"
                 label="Registrati"
-                className="w-10rem mx-auto"
+                className="w-18rem mx-auto"
                 severity="primary"
                 icon="pi pi-check"
               />
