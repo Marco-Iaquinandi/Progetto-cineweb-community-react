@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Button } from "primereact/button";
 import "./ImageSlider.css";
 
-function ImageSlider(id) {
+function ImageSlider({ id }) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {

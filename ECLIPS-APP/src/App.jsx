@@ -9,7 +9,7 @@ import FormLogIn from "./components/FormLogIn";
 import { UserProvider } from "./components/ContextLog";
 import "./index.css";
 import SeatMap from "./components/pages/SeatMap";
-import StructurePage from './components/pages/StructurePage';
+import StructurePage from "./components/pages/StructurePage";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
@@ -22,7 +22,6 @@ import "primeicons/primeicons.css";
 import Footer from "./components/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import FilmDesc from "./components/pages/FilmDesc";
-
 
 function App() {
   const [showRegister, setShowRegister] = useState(false);
@@ -63,16 +62,15 @@ function App() {
               }
             />
             <Route path="/SeatMap" element={<SeatMap />} />
-            <Route path='/dove trovarci' element= { <StructurePage />} />
-            <Route path="/Filmdescrizione/:id" element= { <FilmDesc />} />
-           
-        </Routes>
+            <Route path="/dove trovarci" element={<StructurePage />} />
+            <Route path="/Filmdescrizione/:id" element={<FilmDesc />} />
+            <Route path="/Filmdescrizione/:id/acquista" element={<SeatMap />} />
+          </Routes>
           <Footer />
           <ScrollToTopButton />
         </BrowserRouter>
       </PrimeReactProvider>
     </UserProvider>
-  
   );
 }
 
