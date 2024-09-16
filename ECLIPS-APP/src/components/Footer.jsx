@@ -105,8 +105,8 @@ function Footer() {
         </div>
       </div>
       <div className="copyright">
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
-        <p className="classe-develope">Developed by Your Name</p>
+        <p>&copy; 2024 Classe DevelHope. All rights reserved.</p>
+        <p className="classe-develope">Developed by Marco,Mirko,Antonino</p>
       </div>
     </div>
   );

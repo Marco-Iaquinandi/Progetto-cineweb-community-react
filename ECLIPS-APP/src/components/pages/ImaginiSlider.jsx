@@ -2,7 +2,7 @@ export const ProductService = {
   getProductsData() {
     return [
       {
-        id: "1000",
+        id: "Deadpool",
         code: "f230fh0g3",
         name: "Bamboo Watch",
         description: "Product Description",
