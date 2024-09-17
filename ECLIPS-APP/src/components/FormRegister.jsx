@@ -79,7 +79,7 @@ function FormRegister({ onToggle, showRegister }) {
       return "input-error";
     } else if (formRegistrazione[field]) {
       return "input-success";
-    } 
+    }
     return "border-1 border-gray-500";
   };
   return (
@@ -91,8 +91,9 @@ function FormRegister({ onToggle, showRegister }) {
       onHide={() => {
         onToggle();
         setErrors("");
+        setFormRegister("");
       }}
-      style={{ width: "20vw", height: "100vh" }}
+      style={{ width: "20vw", height: "100vh", background: "#f1f7fe" }}
     >
       <div
         style={{
@@ -100,13 +101,25 @@ function FormRegister({ onToggle, showRegister }) {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          height: "50vh",
+          height: "75vh",
           gap: "20px",
         }}
       >
         <div className="w-full md:w-5 flex flex-column align-items-center justify-content-center gap-3 py-5">
-          <h1 style={{background: "black", width: "240%", height: "20vh", textAlign:"center", alignContent: "center",color:"white"}}>Registrati</h1>
-          <form onSubmit={handleSubmit} className="w-full md:w-5 flex flex-column align-items-center justify-content-center gap-3 py-5">
+          <h1
+            style={{
+              width: "240%",
+              textAlign: "center",
+              alignContent: "center",
+              color: "black",
+            }}
+          >
+            Registrati
+          </h1>
+          <form
+            onSubmit={handleSubmit}
+            className="w-full md:w-5 flex flex-column align-items-center justify-content-center gap-4 py-5"
+          >
             <div className="flex flex-wrap justify-content-center align-items-center gap-2">
               <InputText
                 type="email"
@@ -116,7 +129,8 @@ function FormRegister({ onToggle, showRegister }) {
                 onChange={handleInputChange}
                 id="email"
                 required
-                className={`w-18rem ${getClassName("email")}`}
+                className={`p-3 w-18rem ${getClassName("email")}`}
+                style={{ borderRadius: "15px" }}
               />
             </div>
             <div className="flex flex-wrap justify-content-center align-items-center gap-2">
@@ -128,7 +142,8 @@ function FormRegister({ onToggle, showRegister }) {
                 onChange={handleInputChange}
                 id="password"
                 required
-                className={`w-18rem  ${getClassName("password")}`}
+                className={`p-3 w-18rem  ${getClassName("password")}`}
+                style={{ borderRadius: "15px" }}
               />
             </div>
             <div className="flex flex-wrap justify-content-center align-items-center gap-2">
@@ -140,15 +155,17 @@ function FormRegister({ onToggle, showRegister }) {
                 onChange={handleInputChange}
                 id="ConfirmPassword"
                 required
-                className={`w-18rem ${getClassName("confirmPassword")}`}
+                className={`p-3 w-18rem ${getClassName("confirmPassword")}`}
+                style={{ borderRadius: "15px" }}
               />
             </div>
 
             <div style={{ marginTop: "1.5rem", textAlign: "center" }}>
               <Button
+                style={{ borderRadius: "20px" }}
                 type="submit"
                 label="Registrati"
-                className="w-18rem mx-auto"
+                className="w-18rem mx-auto p-3"
                 severity="primary"
                 icon="pi pi-check"
               />
