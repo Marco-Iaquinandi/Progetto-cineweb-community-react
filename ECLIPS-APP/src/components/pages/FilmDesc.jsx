@@ -1,6 +1,4 @@
-
-import React, { useLayoutEffect } from "react";
-import React, { useState, useLayoutEffect } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import filmsData from "../Listafilms.json";
 import SeatMap from "./SeatMap";
@@ -24,6 +22,7 @@ function FilmDesc() {
   };
 
   return (
+    <>
     <div className="film-background" style={{ backgroundImage: `url(/src/assets/img/${film.background})` }}>
       <div className="film-content">
         <div className="film-container">
@@ -58,7 +57,6 @@ function FilmDesc() {
           </div>
         </div>
       </div>
-    </div>
 
       {showSeatMap && (
         <div className="seat-map-popup">
