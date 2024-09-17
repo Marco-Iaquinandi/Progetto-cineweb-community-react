@@ -1,11 +1,15 @@
+
 import React, { useLayoutEffect } from "react";
+import React, { useState, useLayoutEffect } from "react";
 import { useParams } from "react-router-dom";
 import filmsData from "../Listafilms.json";
-import "./FilmDesc.css"; // Importa il file CSS
+import SeatMap from "./SeatMap";
+import "./FilmDesc.css";
 
 function FilmDesc() {
   const { id } = useParams();
   const film = filmsData.films.find((film) => film.idFilm === parseInt(id));
+  const [showSeatMap, setShowSeatMap] = useState(false);
 
   if (!film) {
     return <h2>Film non trovato</h2>;
@@ -14,6 +18,10 @@ function FilmDesc() {
   useLayoutEffect(() => {
     document.documentElement.scrollTo({ top:0, left:0, behavior: "instant" });
   }, [location.pathname]);
+  
+  const toggleSeatMap = () => {
+    setShowSeatMap((prev) => !prev);
+  };
 
   return (
     <div className="film-background" style={{ backgroundImage: `url(/src/assets/img/${film.background})` }}>
@@ -43,10 +51,28 @@ function FilmDesc() {
             <div className="film-times">
               <strong>Orari:</strong> {film.orari.join(", ")}
             </div>
+              <button className="btn-buy" onClick={toggleSeatMap}>
+                ACQUISTA ORA
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+      {showSeatMap && (
+        <div className="seat-map-popup">
+          <div className="popup-overlay" onClick={toggleSeatMap}></div>{" "}
+          <div className="popup-content">
+            <button className="close-btn" onClick={toggleSeatMap}>
+              X
+            </button>{" "}
+            <SeatMap />
+          </div>
+        </div>
+      )}
+    </>
+
   );
 }
 

@@ -2,7 +2,7 @@ export const ProductService = {
   getProductsData() {
     return [
       {
-        id: "1000",
+        id: "Deadpool",
         code: "f230fh0g3",
         name: "DEADPOOL & WOLVERINE",
         description: "Mentre si sta riprendendo dopo essere stato gravemente ferito, Wolverine ha la sfortuna di incontrare quel chiacchierone di Deadpool. I due, uno con più entusiasmo dell'altro, si alleano per sconfiggere un nemico comune.",

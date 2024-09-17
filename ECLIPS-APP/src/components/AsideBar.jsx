@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Dropdown } from "primereact/dropdown";
 import listaFilms from "./Listafilms.json";
 import { Calendar } from "primereact/calendar";
+import { Button } from "primereact/button";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 
 const AsideBar = () => {
@@ -46,6 +47,8 @@ const AsideBar = () => {
     { label: "E-CLIPS EARTH", value: "E-CLIPS EARTH" },
     { label: "E-CLIPS PLUTO", value: "E-CLIPS PLUTO" },
   ];
+  const selezione = !selectedFilm || !selectedCinema || !selectedTime || !date;
+
   const isDisabled = !selectedFilm || !selectedCinema;
   return (
     <Sidebar
@@ -162,7 +165,9 @@ const AsideBar = () => {
           </span>
           <div id="containerTime" className="container-cinema-Hide"></div>
 
-          <button className="search">CERCA</button>
+          <button className="bg-white search">
+            {selezione ? "Cerca" : "Scegli"}
+          </button>
         </div>
       </div>
     </Sidebar>

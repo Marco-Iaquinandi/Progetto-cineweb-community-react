@@ -25,7 +25,7 @@ function ImageCarousel() {
   };
 
   return (
-    <div className="card flex justify-content-center ">
+    <div className="carousel-adjust flex justify-content-center ">
       <Carousel
         value={products}
         numVisible={1}

@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import { Button } from "primereact/button";
 import "./ImageSlider.css";
 
-function ImageSlider() {
+
+function ImageSlider() { 
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -35,13 +36,37 @@ function ImageSlider() {
     );
   };
 
+  // const responsiveOptions = [
+  //   {
+  //     breakpoint: "1200px",
+  //     numVisible: 4,
+  //     numScroll: 1,
+  //   },
+  //   {
+  //     breakpoint: "1024px",
+  //     numVisible: 3,
+  //     numScroll: 1,
+  //   },
+  //   {
+  //     breakpoint: "768px",
+  //     numVisible: 2,
+  //     numScroll: 1,
+  //   },
+  //   {
+  //     breakpoint: "576px",
+  //     numVisible: 1,
+  //     numScroll: 1,
+  //   },
+  // ];
+
   return (
-    <div className="card flex justify-content-center">
+    <div className=" flex justify-content-center">
       <Carousel
         showIndicators={false}
         value={products}
         numVisible={4}
         numScroll={1}
+        // responsiveOptions={responsiveOptions}
         orientation="horizontal"
         verticalViewPortHeight="360px"
         autoplayInterval={3000}

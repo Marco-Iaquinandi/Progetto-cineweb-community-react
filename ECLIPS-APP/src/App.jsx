@@ -9,7 +9,7 @@ import FormLogIn from "./components/FormLogIn";
 import { UserProvider } from "./components/ContextLog";
 import "./index.css";
 import SeatMap from "./components/pages/SeatMap";
-import StructurePage from './components/pages/StructurePage';
+import StructurePage from "./components/pages/StructurePage";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
@@ -24,7 +24,6 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 import FilmDesc from "./components/pages/FilmDesc";
 import ImageSlider from "./components/ImageSlider";
 import ProductDetail from "./components/ProductDetail";
-
 
 function App() {
   const [showRegister, setShowRegister] = useState(false);
@@ -69,14 +68,15 @@ function App() {
             <Route path="/Filmdescrizione/:id" element= { <FilmDesc />} />
             <Route path="/" element={<ImageSlider />} />
             <Route path="/product/:id" element={<ProductDetail />} /> {/* Route per i dettagli del prodotto */}
+            <Route path="/Filmdescrizione/:id/acquista" element={<SeatMap />} />
            
         </Routes>
+
           <Footer />
           <ScrollToTopButton />
         </BrowserRouter>
       </PrimeReactProvider>
     </UserProvider>
-  
   );
 }
 

@@ -4,6 +4,8 @@ import "./SeatMap.css";
 
 const SeatMap = () => {
   const [selectedSeats, setSelectedSeats] = useState([]);
+  const [showCart, setShowCart] = useState(false);
+  const [checkoutComplete, setCheckoutComplete] = useState(false);
 
   const toggleSeat = (id) => {
     setSelectedSeats((prevSelectedSeats) =>
@@ -11,6 +13,16 @@ const SeatMap = () => {
         ? prevSelectedSeats.filter((seatId) => seatId !== id)
         : [...prevSelectedSeats, id]
     );
+  };
+
+  const toggleCart = () => {
+    setShowCart((prevShowCart) => !prevShowCart);
+  };
+
+  const handleCheckout = () => {
+    setCheckoutComplete(true);
+    setSelectedSeats([]);
+    setShowCart(false);
   };
 
   const rows = 10;
@@ -22,6 +34,7 @@ const SeatMap = () => {
 
   return (
     <div className="seat-map-container">
+      <h2>Seleziona i tuoi posti</h2>
       <div className="seat-map">
         {Array.from({ length: rows }).map((_, rowIndex) => {
           const rowLetter = String.fromCharCode(65 + rowIndex);
@@ -51,7 +64,7 @@ const SeatMap = () => {
                           onClick={() => toggleSeat(seat.id)}
                           data-seat={seat.seat}
                         >
-                          {/* Vuoto; numero del posto mostrato solo su hover */}
+                          {seat.seat}
                         </div>
                       ))}
                   </div>
@@ -61,6 +74,46 @@ const SeatMap = () => {
           );
         })}
       </div>
+
+      {selectedSeats.length > 0 && (
+        <div className="cart-container" onClick={toggleCart}>
+          <div className="cart-icon">
+            🛒
+            <span className="cart-count">{selectedSeats.length}</span>
+          </div>
+        </div>
+      )}
+
+      {showCart && (
+        <div className="cart-popup">
+          <div className="popup-overlay" onClick={toggleCart}></div>
+          <div className="popup-content">
+            <button className="close-btn" onClick={toggleCart}>
+              X
+            </button>
+            <h3>Posti selezionati</h3>
+            <ul>
+              {selectedSeats.map((seatId) => {
+                const seat = seats.find((s) => s.id === seatId);
+                return (
+                  <li key={seat.id}>
+                    Fila {seat.row}, Posto {seat.seat}
+                  </li>
+                );
+              })}
+            </ul>
+            <button className="checkout-btn" onClick={handleCheckout}>
+              Conferma Acquisto
+            </button>
+          </div>
+        </div>
+      )}
+
+      {checkoutComplete && (
+        <div className="checkout-message">
+          <p>Grazie! Il tuo acquisto è stato confermato.</p>
+        </div>
+      )}
     </div>
   );
 };
