@@ -10,7 +10,8 @@
       "distribuzione": "Warner Bros. Pictures",
       "copertina": "challengers.jpg",
       "orari": ["18:00", "20:30", "23:00"],
-      "background": "scena-challengers.jpg"
+      "background": "scena-challengers.jpg",
+      "trailer": "CHALLENGERS _ Trailer Ufficiale.mp4"
     },
     {
       "idFilm": 1,
@@ -22,7 +23,8 @@
       "distribuzione": "Universal Pictures",
       "copertina": "btb1.jpg",
       "orari": ["18:00", "20:20", "22:40"],
-      "background":"scena-backtoblack.jpg"
+      "background":"scena-backtoblack.jpg",
+      "trailer": "Back To Black _ Trailer Ufficiale.mp4"
     },
     {
       "idFilm": 2,
@@ -34,7 +36,8 @@
       "distribuzione": " 01 Distribution",
       "copertina": "civil-war.jpg",
       "orari": ["18:00", "20:20", "22:40"],
-      "background":"scena-civilwar.jpg"
+      "background":"scena-civilwar.jpg",
+      "trailer": "CIVIL WAR di Alex Garland (2024).mp4"
     },
     {
       "idFilm": 3,
@@ -46,7 +49,8 @@
       "distribuzione": "Eagle Pictures",
       "copertina": "ghostbusters-minaccia-glacial.jpg",
       "orari": ["18:00", "20:20", "22:40"],
-      "background": "scena-ghostbusters.jpg"
+      "background": "scena-ghostbusters.jpg",
+      "trailer": "Ghostbusters_ Minaccia Glaciale.mp4"
     },
     {
       "idFilm": 4,
@@ -58,7 +62,9 @@
       "distribuzione": "Warner Bros. Italia",
       "copertina": "godzilla-e-kong-il-nuovo-imper.jpg",
       "orari": ["18:00", "20:20", "22:40"],
-      "background": "scena-godzilla-e-kong.jpg"
+      "background": "scena-godzilla-e-kong.jpg",
+      "trailer": "Godzilla e Kong - Il Nuovo Impero.mp4"
+
     },
 
     {
@@ -71,7 +77,8 @@
       "distribuzione":"Universal Pictures",
       "copertina": "kung-fu-panda-4.jpg",
       "orari": ["16:00", "18:00", "20:30"],
-      "background": "scena-kungfu-panda.jpeg"
+      "background": "scena-kungfu-panda.jpeg",
+      "trailer": "Kung Fu Panda 4 _ Trailer.mp4"
     },
     {
       "idFilm": 6,
@@ -83,7 +90,8 @@
       "distribuzione": "Sony Pictures Entertainment Italia",
       "copertina": "spy-x-family-code-white.jpg",
       "orari": ["16:00", "18:15", "20:30"],
-      "background": "scena-spyfamily.jpg"
+      "background": "scena-spyfamily.jpg",
+      "trailer": "SPY x FAMILY CODE_ White.mp4"
     },
     {
       "idFilm": 7,
@@ -95,7 +103,8 @@
       "distribuzione": "Medusa Film",
       "copertina": "un-mondo-a-parte.jpg",
       "orari": ["18:00", "20:20", "22:40"],
-      "background": "scena-un-mondo-a-parte.jpg"
+      "background": "scena-un-mondo-a-parte.jpg",
+      "trailer":"Un mondo a parte _ Trailer Ufficiale.mp4"
     }
   ]
 }

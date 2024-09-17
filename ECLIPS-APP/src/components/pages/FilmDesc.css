@@ -1,10 +1,11 @@
 .film-background {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20px;
-  position: relative;
-  overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    position: relative; 
+    overflow: hidden; 
+    margin-top: 50px;
 }
 
 .film-background::before {
@@ -24,11 +25,15 @@
 }
 
 .page-title {
-  color: #b69b70;
-  text-align: center;
-  margin: 20px 0;
-  position: relative;
-  z-index: 3;
+
+    position: absolute;
+    top: 10px;
+    left: 15%; /* Centra il titolo orizzontalmente */
+    z-index: 3; /* Assicurati che il titolo sia sopra gli altri contenuti */
+    color: #b69b70;
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 0;   
 }
 
 .film-container {
@@ -83,8 +88,9 @@
 .film-author strong,
 .film-distribution strong,
 .film-times strong {
-  color: var(--color-primary);
+    color: var(--color-primary); 
 }
+
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -129,3 +135,4 @@
   justify-content: center;
   align-items: center;
 }
+

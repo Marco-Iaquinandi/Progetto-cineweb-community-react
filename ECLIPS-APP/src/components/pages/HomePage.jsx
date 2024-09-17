@@ -17,7 +17,13 @@ function HomePage() {
             key={film.idFilm}
             id={film.idFilm}
             title={film.titolo}
+            genere= {film.genere}
+            durata= {film.durata}
+            autore={film.autore}
+            descrizione={film.descrizione}
+            distribuzione={film.distribuzione}
             copertina={`../../src/assets/img/${film.copertina}`}
+            videoSrc={`../../src/assets/img/${film.trailer}`}
           ></Locandine>
         ))}
       </div>
