@@ -22,6 +22,8 @@ import "primeicons/primeicons.css";
 import Footer from "./components/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import FilmDesc from "./components/pages/FilmDesc";
+import ImageSlider from "./components/ImageSlider";
+import ProductDetail from "./components/ProductDetail";
 
 
 function App() {
@@ -65,6 +67,8 @@ function App() {
             <Route path="/SeatMap" element={<SeatMap />} />
             <Route path='/dove trovarci' element= { <StructurePage />} />
             <Route path="/Filmdescrizione/:id" element= { <FilmDesc />} />
+            <Route path="/" element={<ImageSlider />} />
+            <Route path="/product/:id" element={<ProductDetail />} /> {/* Route per i dettagli del prodotto */}
            
         </Routes>
           <Footer />

@@ -6,6 +6,7 @@
     padding: 20px;
     position: relative; 
     overflow: hidden; 
+    margin-top: 50px;
 }
 
 .film-background::before {
@@ -25,11 +26,13 @@
 }
 
 .page-title {
+    position: absolute;
+    top: 10px;
+    left: 15%; /* Centra il titolo orizzontalmente */
+    z-index: 3; /* Assicurati che il titolo sia sopra gli altri contenuti */
     color: #b69b70;
+    font-size: 2rem;
     text-align: center;
-    margin: 20px 0;
-    position: relative; 
-    z-index: 3; 
 }
 
 .film-container {
@@ -86,3 +89,4 @@
 .film-times strong {
     color: var(--color-primary); 
 }
+
