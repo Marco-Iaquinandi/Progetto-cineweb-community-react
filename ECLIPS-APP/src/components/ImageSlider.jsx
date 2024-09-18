@@ -5,12 +5,13 @@ import { Link } from "react-router-dom";
 import { Button } from "primereact/button";
 import "./ImageSlider.css";
 
-
-function ImageSlider() { 
+function ImageSlider() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    ProductService.getProductsSmall().then((data) => setProducts(data.slice(0, 9)));
+    ProductService.getProductsSmall().then((data) =>
+      setProducts(data.slice(0, 9))
+    );
   }, []);
 
   const productTemplate = (product) => {
@@ -19,19 +20,20 @@ function ImageSlider() {
         id="ComingSoon"
         className="surface-border border-round m-2 text-center py-5 px-3"
       >
-        <div className="image-container">
+        <div className="slider-container">
           <img
             src={`../../src/assets/img/${product.image}`}
             alt={product.name}
             className="slider-image"
           ></img>
-          <div className="buttons-buy-container">
+          <div className="buy-container">
             <Link to={`/product/${product.id}`}>
-              <Button label="ACQUISTA ORA" className="btn-buy"></Button>
+              <Button label="PROSSIMAMENTE" className="btn-buy"></Button>
             </Link>
             <Button label="Trailer" className="btn-trailer"></Button>
           </div>
         </div>
+        <a className="coming-title">{product.name}</a>
       </div>
     );
   };

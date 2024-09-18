@@ -82,6 +82,7 @@ function Navbar({}) {
     {
       label: "Coming Soon",
       icon: "pi pi-video",
+      url: "image-slider",
       template: itemlink,
     },
     {

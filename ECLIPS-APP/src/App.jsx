@@ -44,7 +44,7 @@ function App() {
           <Navbar
             links={[
               { url: "/", text: "Home" },
-              { url: "#image-slider", text: "Coming Soon" },
+              { url: "image-slider", text: "Coming Soon" },
               { url: "promo", text: "Promo" },
               { url: "dove trovarci", text: "Dove Trovarci" },
               { url: "SeatMap", text: "Acquista biglietto" },
@@ -64,13 +64,13 @@ function App() {
               }
             />
             <Route path="/SeatMap" element={<SeatMap />} />
-            <Route path='/dove trovarci' element= { <StructurePage />} />
-            <Route path="/Filmdescrizione/:id" element= { <FilmDesc />} />
+            <Route path="/dove trovarci" element={<StructurePage />} />
+            <Route path="/Filmdescrizione/:id" element={<FilmDesc />} />
             <Route path="/" element={<ImageSlider />} />
-            <Route path="/product/:id" element={<ProductDetail />} /> {/* Route per i dettagli del prodotto */}
+            <Route path="/product/:id" element={<ProductDetail />} />{" "}
             <Route path="/Filmdescrizione/:id/acquista" element={<SeatMap />} />
-           
-        </Routes>
+            <Route path="image-slider" element={<ImageSlider />} />
+          </Routes>
 
           <Footer />
           <ScrollToTopButton />

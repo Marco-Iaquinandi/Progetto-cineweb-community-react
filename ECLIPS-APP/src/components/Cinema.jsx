@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "./Cinema.css";
 
 const Cinema = ({ name, address, phone, email, scheduleLink }) => {
@@ -10,9 +10,14 @@ const Cinema = ({ name, address, phone, email, scheduleLink }) => {
 
   return (
     <div className="cinema">
-      <div className="cinema-title" onClick={toggleDetails} style={{ cursor: 'pointer' }}>
+      <div
+        className="cinema-title "
+        onClick={toggleDetails}
+        style={{ cursor: "pointer" }}
+      >
         <h2>
-          {name} <span className="toggle-button">{showDetails ? '-' : '+'}</span>
+          {name}{" "}
+          <span className="toggle-button">{showDetails ? "-" : "+"}</span>
         </h2>
       </div>
       {showDetails && (

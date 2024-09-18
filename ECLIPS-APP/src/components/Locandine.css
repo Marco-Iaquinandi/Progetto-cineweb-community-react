@@ -85,12 +85,6 @@
   text-shadow: 0px 0px 20px white;
 }
 
-.image-container img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .image-container::after {
   content: "";
   position: absolute;
@@ -131,5 +125,3 @@
 .image-container:hover .btn-info {
   display: flex; /* Mostra il pulsante quando si passa sopra la locandina */
 }
-
-
