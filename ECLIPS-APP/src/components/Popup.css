@@ -12,7 +12,7 @@
     z-index: 1000;
 }
 
-.popup-content {
+.popup-contents {
     background: black;
     padding: 20px;
     border: 2px solid #b69b70;
@@ -60,6 +60,7 @@
 .popup-film-author,
 .popup-film-distribution {
     color: white;
+    margin-top: 10px;
 }
 
 .popup-film-title strong,

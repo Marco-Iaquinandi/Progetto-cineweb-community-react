@@ -68,16 +68,13 @@
   margin-bottom: 5rem;
 }
 
-.btn-trailer {
-  background: none;
-}
-
 .btn-trailer i {
   margin-right: 10px;
   font-size: 26px;
 }
 
 .btn-buy:hover,
+.btn-trailer:hover,
 .btn-info:hover {
   border-color: #b69b70;
   box-shadow: inset 0px 0px 4px 5px #b69b70;

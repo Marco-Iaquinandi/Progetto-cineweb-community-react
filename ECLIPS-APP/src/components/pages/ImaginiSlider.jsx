@@ -12,6 +12,10 @@ export const ProductService = {
         duration: "127 min",
         author: "Shawn Levy",
         distribution: "Walt Disney Studios Motion Pictures",
+        times: 5,
+        trailerUrl: "src/assets/img/Deadpool & Wolverine _ Trailer Ufficiale.mp4", 
+        background: "scena deadpool e wolverine.jpg"
+
       },
       {
         id: "1001",
@@ -24,6 +28,10 @@ export const ProductService = {
         duration: "138 min",
         author: "Todd Phillips",
         distribution: "Warner Bros. Entertainment Italia",
+        times: 5,
+        trailerUrl: "src/assets/img/Joker_ Folie À Deux _ Trailer Ufficiale.mp4", 
+        background: "scena joker 2.jpg"
+
       },
       {
         id: "1002",
@@ -36,6 +44,10 @@ export const ProductService = {
         duration: "100 min",
         author: "Michael Sarnoski",
         distribution: "Eagle Pictures",
+        times: 5,
+        trailerUrl: "src/assets/img/A Quiet Place_ Giorno 1 _ Trailer Ufficiale.mp4", 
+        background: "scena a quiet place.jpg"
+
       },
       {
         id: "1003",
@@ -48,9 +60,13 @@ export const ProductService = {
         duration: "135 min",
         author: "Kelly Marcel",
         distribution: "Eagle Pictures",
+        times: 5,
+        trailerUrl: "src/assets/img/Venom_ The Last Dance - Final Trailer.mp4", 
+        background: "scena venom.jpg"
+
       },
       {
-        id: "1003",
+        id: "1004",
         code: "244wgerg2",
         name: "WICKED",
         description:
@@ -60,9 +76,13 @@ export const ProductService = {
         duration: "142 min",
         author: "Jon M. Chu",
         distribution: "Universal Pictures",
+        times: 5,
+        trailerUrl: "src/assets/img/WICKED - Trailer Ufficiale.mp4", 
+        background: "scena wicked 2.jpg"
+
       },
       {
-        id: "1003",
+        id: "1005",
         code: "244wgerg2",
         name: "IL GLADIATORE II",
         description:
@@ -72,9 +92,13 @@ export const ProductService = {
         duration: "141 min",
         author: "Ridley Scott",
         distribution: "Paramount Pictures",
+        times: 5,
+        trailerUrl: "src/assets/img/Il Gladiatore 2_ trailer.mp4", 
+        background: "scena gladiatore 2.jpg"
+
       },
       {
-        id: "1003",
+        id: "1006",
         code: "244wgerg2",
         name: "BEETLEJUICE BEETLEJUICE",
         description:
@@ -84,6 +108,9 @@ export const ProductService = {
         duration: "104 min",
         author: "Tim Burton",
         distribution: "Warner Bros. Pictures",
+        times: 5,
+        trailerUrl: "src/assets/img/Beetlejuice Beetlejuice _ Trailer Ufficiale 2.mp4", 
+        background: "scena beetlejuice.jpg"
       },
     ];
   },

@@ -67,10 +67,12 @@ function App() {
             <Route path="/dove trovarci" element={<StructurePage />} />
             <Route path="/Filmdescrizione/:id" element={<FilmDesc />} />
             <Route path="/" element={<ImageSlider />} />
+
             <Route path="/product/:id" element={<ProductDetail />} />{" "}
             <Route path="/Filmdescrizione/:id/acquista" element={<SeatMap />} />
             <Route path="image-slider" element={<ImageSlider />} />
           </Routes>
+
 
           <Footer />
           <ScrollToTopButton />

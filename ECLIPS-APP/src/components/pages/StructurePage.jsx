@@ -3,6 +3,7 @@ import Cinema from "../Cinema";
 import "../../index.css";
 import "./StructurePage.css";
 
+
 function StructurePage() {
   return (
     <>
