@@ -6,7 +6,7 @@ import "./StructurePage.css"
 function StructurePage () {
     return (
         <>
-        <div class="structure-choice">
+        <div className="structure-choice">
       <h1>SCEGLI IL TUO E-CLIPS PIU' VICINO</h1>
     </div>
     <div className="cinema-container">

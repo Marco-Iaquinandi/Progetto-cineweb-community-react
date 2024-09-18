@@ -12,6 +12,8 @@ export const ProductService = {
         author: "Shawn Levy",
         distribution: "Walt Disney Studios Motion Pictures",
         times: 5,
+        trailerUrl: "src/assets/img/Deadpool & Wolverine _ Trailer Ufficiale.mp4", 
+        background: "scena deadpool e wolverine.jpg"
       },
       {
         id: "1001",
@@ -24,6 +26,8 @@ export const ProductService = {
         author: "Todd Phillips",
         distribution: "Warner Bros. Entertainment Italia",
         times: 5,
+        trailerUrl: "src/assets/img/Joker_ Folie À Deux _ Trailer Ufficiale.mp4", 
+        background: "scena joker 2.jpg"
       },
       {
         id: "1002",
@@ -36,6 +40,8 @@ export const ProductService = {
         author: "Michael Sarnoski",
         distribution: "Eagle Pictures",
         times: 5,
+        trailerUrl: "src/assets/img/A Quiet Place_ Giorno 1 _ Trailer Ufficiale.mp4", 
+        background: "scena a quiet place.jpg"
       },
       {
         id: "1003",
@@ -48,9 +54,11 @@ export const ProductService = {
         author: "Kelly Marcel",
         distribution: "Eagle Pictures",
         times: 5,
+        trailerUrl: "src/assets/img/Venom_ The Last Dance - Final Trailer.mp4", 
+        background: "scena venom.jpg"
       },
       {
-        id: "1003",
+        id: "1004",
         code: "244wgerg2",
         name: "WICKED",
         description: "Molto Prima dell'arrivo di Dorothy Gale nel Regno di Oz, Elphaba, una giovane donna nata con la pelle verde smeraldo, incontra Glinda, una giovane donna bionda, vivace ed estremamente popolare. Sebbene tutto si opponga a loro, le due faranno amicizia. Ma tra le rivalità e il governo corrotto del Mago di Oz la loro relazione prenderà rapidamente un'altra svolta.",
@@ -60,9 +68,11 @@ export const ProductService = {
         author: "Jon M. Chu",
         distribution: "Universal Pictures",
         times: 5,
+        trailerUrl: "src/assets/img/WICKED - Trailer Ufficiale.mp4", 
+        background: "scena wicked 2.jpg"
       },
       {
-        id: "1003",
+        id: "1005",
         code: "244wgerg2",
         name: "IL GLADIATORE II",
         description: "La storia di Lucius, figlio di Lucilla, innamorata di Massimo, si svolge dopo la morte di quest'ultimo. Lucius, che è anche il nipote di Commodo, è ormai un uomo adulto.",
@@ -72,9 +82,11 @@ export const ProductService = {
         author: "Ridley Scott",
         distribution: "Paramount Pictures",
         times: 5,
+        trailerUrl: "src/assets/img/Il Gladiatore 2_ trailer.mp4", 
+        background: "scena gladiatore 2.jpg"
       },
       {
-        id: "1003",
+        id: "1006",
         code: "244wgerg2",
         name: "BEETLEJUICE BEETLEJUICE",
         description: "La vecchia dimora dei Deetz è ancora infestata dallo spirito di Beetlejuice (Michael Keaton), relegato, però, nel mondo dei non morti. Quando la ribelle Astrid si reca in soffitta, scopre il modellino della città e apre accidentalmente il portale dell'Aldilà.",
@@ -84,6 +96,8 @@ export const ProductService = {
         author: "Tim Burton",
         distribution: "Warner Bros. Pictures",
         times: 5,
+        trailerUrl: "src/assets/img/Beetlejuice Beetlejuice _ Trailer Ufficiale 2.mp4", 
+        background: "scena beetlejuice.jpg"
       },
     ];
   },
