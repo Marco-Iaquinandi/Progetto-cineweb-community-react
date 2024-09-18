@@ -5,7 +5,7 @@ import "./Popup.css";
 function Popup({ title, genere, durata, autore, descrizione, distribuzione, onClose }) {
   return (
     <div className="popup">
-      <div className="popup-content">
+      <div className="popup-contents">
       <Button className="btn-popup-close" onClick={onClose}>
           &times;
         </Button>

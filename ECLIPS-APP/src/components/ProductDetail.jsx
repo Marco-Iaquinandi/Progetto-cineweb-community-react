@@ -23,8 +23,7 @@ function ProductDetail() {
   if (!product) return <div>Loading...</div>;
 
   return (
-    <div className="film-background">
-      <div className="film-content">
+     <div className="film-background"  style={{ backgroundImage: `url('../../src/assets/img/${product.background}')`}}>
         <div className="film-container">
           <h1 className="page-title">SCHEDA DEL FILM</h1>
           <img src={`../../src/assets/img/${product.image}`} alt={product.name} className="film-image" />
@@ -33,13 +32,12 @@ function ProductDetail() {
             <p className="film-description">{product.description}</p>
             <p className="film-genre"><strong>Genere:</strong> {product.genre}</p>
             <p className="film-duration"><strong>Durata:</strong> {product.duration}</p>
-            <p className="film-author"><strong>Regista:</strong> {product.quantity}</p>
+            <p className="film-author"><strong>Regista:</strong> {product.author}</p>
             <p className="film-distribution"><strong>Distribuzione:</strong> {product.distribution}</p>
             <p className="film-times"><strong>Orari:</strong> {product.times}</p>
           </div>
         </div>
       </div>
-    </div>
   );
 }
 
