@@ -5,7 +5,8 @@ export const ProductService = {
         id: "Deadpool",
         code: "f230fh0g3",
         name: "DEADPOOL & WOLVERINE",
-        description: "Mentre si sta riprendendo dopo essere stato gravemente ferito, Wolverine ha la sfortuna di incontrare quel chiacchierone di Deadpool. I due, uno con più entusiasmo dell'altro, si alleano per sconfiggere un nemico comune.",
+        description:
+          "Mentre si sta riprendendo dopo essere stato gravemente ferito, Wolverine ha la sfortuna di incontrare quel chiacchierone di Deadpool. I due, uno con più entusiasmo dell'altro, si alleano per sconfiggere un nemico comune.",
         image: "deadpool.jpg",
         genre: "Fantascienza",
         duration: "127 min",
@@ -14,12 +15,14 @@ export const ProductService = {
         times: 5,
         trailerUrl: "src/assets/img/Deadpool & Wolverine _ Trailer Ufficiale.mp4", 
         background: "scena deadpool e wolverine.jpg"
+
       },
       {
         id: "1001",
         code: "nvklal433",
         name: "JOKER: FOLIE A' DEUX",
-        description: "Il comico fallito Arthur Fleck incontra l'amore della sua vita, Harley Quinn, mentre è detenuto all'Arkham State Hospital. A seguito del suo rilascio, i due si imbarcano in una disavventura romantica.",
+        description:
+          "Il comico fallito Arthur Fleck incontra l'amore della sua vita, Harley Quinn, mentre è detenuto all'Arkham State Hospital. A seguito del suo rilascio, i due si imbarcano in una disavventura romantica.",
         image: "joker.jpg",
         genre: "Drammatico, Azione, Giallo",
         duration: "138 min",
@@ -28,12 +31,14 @@ export const ProductService = {
         times: 5,
         trailerUrl: "src/assets/img/Joker_ Folie À Deux _ Trailer Ufficiale.mp4", 
         background: "scena joker 2.jpg"
+
       },
       {
         id: "1002",
         code: "zz21cz3c1",
         name: "A QUIET PLACE - GIORNO 1",
-        description: "Quando New York City viene invasa dagli alieni, una donna e altri sopravvissuti cercano di trovare la salvezza. Presto imparano che devono rimanere assolutamente in silenzio, poiché le misteriose creature sono attratte dal suono.",
+        description:
+          "Quando New York City viene invasa dagli alieni, una donna e altri sopravvissuti cercano di trovare la salvezza. Presto imparano che devono rimanere assolutamente in silenzio, poiché le misteriose creature sono attratte dal suono.",
         image: "place.jpg",
         genre: "Horror",
         duration: "100 min",
@@ -42,12 +47,14 @@ export const ProductService = {
         times: 5,
         trailerUrl: "src/assets/img/A Quiet Place_ Giorno 1 _ Trailer Ufficiale.mp4", 
         background: "scena a quiet place.jpg"
+
       },
       {
         id: "1003",
         code: "244wgerg2",
         name: "VENOM: THE LAST DANCE",
-        description: "Dopo gli eventi di Spider-Man: No Way Home (2021), il governo statunitense dà la caccia a Eddie Brock e a Venom, mentre altri simbionti dallo spazio, mandati dal creatore di Venom Knull, giungono sulla Terra.",
+        description:
+          "Dopo gli eventi di Spider-Man: No Way Home (2021), il governo statunitense dà la caccia a Eddie Brock e a Venom, mentre altri simbionti dallo spazio, mandati dal creatore di Venom Knull, giungono sulla Terra.",
         image: "venom.jpg",
         genre: "Azione, Fantascienza, Thriller",
         duration: "135 min",
@@ -56,12 +63,14 @@ export const ProductService = {
         times: 5,
         trailerUrl: "src/assets/img/Venom_ The Last Dance - Final Trailer.mp4", 
         background: "scena venom.jpg"
+
       },
       {
         id: "1004",
         code: "244wgerg2",
         name: "WICKED",
-        description: "Molto Prima dell'arrivo di Dorothy Gale nel Regno di Oz, Elphaba, una giovane donna nata con la pelle verde smeraldo, incontra Glinda, una giovane donna bionda, vivace ed estremamente popolare. Sebbene tutto si opponga a loro, le due faranno amicizia. Ma tra le rivalità e il governo corrotto del Mago di Oz la loro relazione prenderà rapidamente un'altra svolta.",
+        description:
+          "Molto Prima dell'arrivo di Dorothy Gale nel Regno di Oz, Elphaba, una giovane donna nata con la pelle verde smeraldo, incontra Glinda, una giovane donna bionda, vivace ed estremamente popolare. Sebbene tutto si opponga a loro, le due faranno amicizia. Ma tra le rivalità e il governo corrotto del Mago di Oz la loro relazione prenderà rapidamente un'altra svolta.",
         image: "wicked.jpg",
         genre: "Family, Commedia, Musicale",
         duration: "142 min",
@@ -70,12 +79,14 @@ export const ProductService = {
         times: 5,
         trailerUrl: "src/assets/img/WICKED - Trailer Ufficiale.mp4", 
         background: "scena wicked 2.jpg"
+
       },
       {
         id: "1005",
         code: "244wgerg2",
         name: "IL GLADIATORE II",
-        description: "La storia di Lucius, figlio di Lucilla, innamorata di Massimo, si svolge dopo la morte di quest'ultimo. Lucius, che è anche il nipote di Commodo, è ormai un uomo adulto.",
+        description:
+          "La storia di Lucius, figlio di Lucilla, innamorata di Massimo, si svolge dopo la morte di quest'ultimo. Lucius, che è anche il nipote di Commodo, è ormai un uomo adulto.",
         image: "gladiator.jpg",
         genre: "storico, epico, azione, drammatico",
         duration: "141 min",
@@ -84,12 +95,14 @@ export const ProductService = {
         times: 5,
         trailerUrl: "src/assets/img/Il Gladiatore 2_ trailer.mp4", 
         background: "scena gladiatore 2.jpg"
+
       },
       {
         id: "1006",
         code: "244wgerg2",
         name: "BEETLEJUICE BEETLEJUICE",
-        description: "La vecchia dimora dei Deetz è ancora infestata dallo spirito di Beetlejuice (Michael Keaton), relegato, però, nel mondo dei non morti. Quando la ribelle Astrid si reca in soffitta, scopre il modellino della città e apre accidentalmente il portale dell'Aldilà.",
+        description:
+          "La vecchia dimora dei Deetz è ancora infestata dallo spirito di Beetlejuice (Michael Keaton), relegato, però, nel mondo dei non morti. Quando la ribelle Astrid si reca in soffitta, scopre il modellino della città e apre accidentalmente il portale dell'Aldilà.",
         image: "juice.jpg",
         genre: "Commedia, Fantasy, Horror",
         duration: "104 min",

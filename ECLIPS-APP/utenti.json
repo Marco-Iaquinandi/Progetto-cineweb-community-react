@@ -29,6 +29,11 @@
       "id": "e8f6",
       "email": "admin@adim.ca",
       "password": "1234567"
+    },
+    {
+      "id": "ddd4",
+      "email": "mirko1@hotmail.com",
+      "password": "789456"
     }
   ]
 }

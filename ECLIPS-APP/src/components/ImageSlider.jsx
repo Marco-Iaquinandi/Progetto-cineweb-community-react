@@ -15,7 +15,9 @@ function ImageSlider() {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   useEffect(() => {
-    ProductService.getProductsSmall().then((data) => setProducts(data.slice(0, 9)));
+    ProductService.getProductsSmall().then((data) =>
+      setProducts(data.slice(0, 9))
+    );
   }, []);
 
   
@@ -31,17 +33,26 @@ function ImageSlider() {
   
   const productTemplate = (product) => {
     return (
-      <div id="ComingSoon" className="surface-border border-round m-2 text-center py-5 px-3">
-        <div className="image-container">
+
+      <div
+        id="ComingSoon"
+        className="surface-border border-round m-2 text-center py-5 px-3"
+      >
+        <div className="slider-container">
+
           <img
             src={`../../src/assets/img/${product.image}`}
             alt={product.name}
             className="slider-image"
           ></img>
+
+          <div className="buy-container">
+
               <Button label="i" className="btn-info" onClick={() => handleInfoClick(product)} />
           <div className="buttons-buy-container">
+
             <Link to={`/product/${product.id}`}>
-              <Button label="ACQUISTA ORA" className="btn-buy"></Button>
+              <Button label="PROSSIMAMENTE" className="btn-buy"></Button>
             </Link>
          
             <Button
@@ -51,6 +62,7 @@ function ImageSlider() {
             ></Button>
           </div>
         </div>
+        <a className="coming-title">{product.name}</a>
       </div>
     );
   };
